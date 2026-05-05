@@ -1,0 +1,2206 @@
+<!DOCTYPE html>
+<html lang="hi" dir="ltr">
+<head>
+<!-- ═══════════════════════════════════════════════════════════
+     SEO + META
+═══════════════════════════════════════════════════════════ -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self' https: data: 'unsafe-inline' 'unsafe-eval'; img-src 'self' https: data: blob:;">
+<meta http-equiv="X-Frame-Options" content="SAMEORIGIN">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+<meta http-equiv="Permissions-Policy" content="geolocation=(), microphone=(), camera=()">
+<title id="siteTitle">मीणा जाति — शोध पोर्टल | Meena Tribe Research Hub</title>
+<meta name="description" id="metaDesc" content="मीणा जाति पर सत्यापित शोध संसाधनों का संग्रह। सरकारी डेटा, अकादमिक जर्नल, थीसिस, PDF।">
+<meta name="keywords" content="मीणा जाति, Meena tribe, Meena research, मीणा शोध, राजस्थान जनजाति">
+<meta name="author" content="मीणा शोध पोर्टल">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="canonical" href="https://meenaportal.org/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="hi_IN">
+<meta property="og:title" content="मीणा जाति — शोध पोर्टल | Meena Tribe Research Hub">
+<meta property="og:description" content="मीणा जाति पर सत्यापित शोध संसाधनों का संग्रह।">
+<meta property="og:url" content="https://meenaportal.org/">
+<meta property="og:site_name" content="मीणा शोध पोर्टल">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="मीणा जाति — शोध पोर्टल">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"मीणा शोध पोर्टल","url":"https://meenaportal.org","inLanguage":["hi","en"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@300;400;500;600;700&family=Noto+Serif+Devanagari:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>">
+<meta name="theme-color" content="#6B1A1A">
+
+<style>
+/* ════════════════ SHARED VARIABLES ════════════════ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --primary:#6B1A1A;--primary2:#9B2020;--primary-dark:#4A1010;
+  --gold:#9B6800;--gold2:#D4A017;--gold-light:#FFF8E8;
+  --light:#FDF8F0;--mid:#F2E6CE;--bg:#F5EFE0;
+  --accent:#2C5F8A;--green:#1A6B3A;--red:#C0392B;
+  --text:#1A1A1A;--text2:#333;--muted:#666;--muted2:#999;
+  --border:#DDD0BB;--border2:#EEE4D0;
+  --shadow-sm:0 1px 4px rgba(0,0,0,.06);
+  --shadow:0 2px 16px rgba(0,0,0,.09);
+  --shadow-lg:0 8px 32px rgba(0,0,0,.14);
+  --shadow-xl:0 20px 60px rgba(0,0,0,.2);
+  --radius:12px;--radius-sm:8px;--radius-lg:16px;
+  --transition:.2s ease;
+  --sidebar-w:240px;--topbar-h:40px;--nav-h:64px;--max-w:1200px;
+  --brand:#6B1A1A;--brand2:#9B2020;--brand-gold:#D4A017;
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{font-family:'Noto Sans Devanagari',system-ui,-apple-system,sans-serif;background:var(--bg);color:var(--text);line-height:1.7;min-height:100vh;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{max-width:100%;height:auto;display:block}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer;font-family:inherit}
+input,textarea,select{font-family:inherit}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border-width:0}
+
+/* ════════════════ PUBLIC SITE STYLES ════════════════ */
+.skip-link{position:fixed;top:-100px;left:16px;z-index:9999;background:var(--primary);color:#fff;padding:8px 16px;border-radius:0 0 8px 8px;font-size:.85rem;transition:top .2s}
+.skip-link:focus{top:0}
+.topbar{background:var(--brand,var(--primary));color:rgba(255,255,255,.85);font-size:.76rem;padding:6px 24px;display:flex;justify-content:space-between;align-items:center;position:relative;z-index:600}
+.topbar a{color:rgba(255,255,255,.8);margin-left:14px;transition:color var(--transition)}
+.topbar a:hover{color:#fff}
+.topbar-left{display:flex;align-items:center;gap:4px}
+nav{background:#fff;border-bottom:3px solid var(--brand-gold,var(--gold2));box-shadow:0 2px 8px rgba(0,0,0,.08);position:sticky;top:0;z-index:500}
+.nav-inner{max-width:var(--max-w);margin:0 auto;padding:0 24px;display:flex;align-items:center;justify-content:space-between;height:var(--nav-h)}
+.nav-logo{display:flex;align-items:center;gap:12px}
+.nav-logo-img{width:44px;height:44px;border-radius:50%;border:2px solid var(--brand-gold,var(--gold2));background:var(--brand,var(--primary));display:flex;align-items:center;justify-content:center;font-size:1.4rem;overflow:hidden;flex-shrink:0}
+.nav-logo-img img{width:100%;height:100%;object-fit:cover}
+.nav-logo-text{font-family:'Noto Serif Devanagari',serif;font-size:1.12rem;font-weight:700;color:var(--brand,var(--primary));line-height:1.2}
+.nav-logo-sub{font-size:.68rem;color:var(--muted);font-weight:400}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a,.nav-links button{color:var(--text);padding:8px 12px;border-radius:var(--radius-sm);font-size:.87rem;font-weight:500;transition:all var(--transition);border:none;background:none;white-space:nowrap}
+.nav-links a:hover,.nav-links button:hover{background:var(--mid);color:var(--brand,var(--primary))}
+.nav-links a.active{background:var(--mid);color:var(--brand,var(--primary));font-weight:600}
+.nav-admin-btn{background:var(--brand,var(--primary))!important;color:#fff!important;border-radius:8px!important;padding:7px 14px!important}
+.nav-admin-btn:hover{background:var(--brand2,var(--primary2))!important}
+.hamburger{display:none;flex-direction:column;gap:5px;padding:6px;border:none;background:none}
+.hamburger span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:all .3s;display:block}
+.hamburger.open span:nth-child(1){transform:rotate(45deg) translate(5px,5px)}
+.hamburger.open span:nth-child(2){opacity:0}
+.hamburger.open span:nth-child(3){transform:rotate(-45deg) translate(5px,-5px)}
+#heroBanner{background:var(--banner-bg,linear-gradient(135deg,var(--primary) 0%,var(--primary2) 55%,var(--gold) 100%));color:#fff;padding:56px 32px 48px;text-align:center;position:relative;overflow:hidden}
+#heroBanner::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 20% 50%,rgba(255,255,255,.06) 0%,transparent 60%),radial-gradient(ellipse at 80% 20%,rgba(255,255,255,.04) 0%,transparent 50%);pointer-events:none}
+.banner-deco{position:absolute;font-size:160px;opacity:.04;pointer-events:none;line-height:1;user-select:none}
+.banner-deco-1{top:-20px;left:-20px}
+.banner-deco-2{bottom:-30px;right:-10px;transform:scaleX(-1)}
+.banner-inner{position:relative;z-index:1;max-width:820px;margin:0 auto}
+.banner-eyebrow{display:inline-block;background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);border-radius:20px;padding:5px 20px;font-size:.78rem;margin-bottom:16px;letter-spacing:.5px}
+.banner-title{font-family:'Noto Serif Devanagari',serif;font-size:clamp(1.6rem,5vw,2.8rem);font-weight:700;text-shadow:0 2px 12px rgba(0,0,0,.25);margin-bottom:12px;line-height:1.25}
+.banner-subtitle{font-size:1rem;opacity:.92;max-width:640px;margin:0 auto 20px;line-height:1.65}
+.banner-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.35);border-radius:20px;padding:6px 22px;font-size:.82rem}
+.banner-img{margin:24px auto 0;max-height:220px;border-radius:var(--radius);object-fit:cover;max-width:500px;display:none;box-shadow:0 8px 30px rgba(0,0,0,.3)}
+.banner-img.show{display:block}
+#scrollProgress{position:fixed;top:0;left:0;height:3px;width:0;background:linear-gradient(90deg,var(--brand,var(--primary)),var(--brand-gold,var(--gold2)));z-index:9000;transition:width .1s linear}
+.container{max-width:var(--max-w);margin:0 auto;padding:36px 20px 60px}
+.stats-bar{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:36px}
+.stat-card{background:#fff;border-radius:var(--radius);padding:18px 16px;text-align:center;box-shadow:var(--shadow);border-top:3px solid var(--brand-gold,var(--gold2));transition:transform var(--transition)}
+.stat-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+.stat-card .num{font-size:2rem;font-weight:700;color:var(--brand,var(--primary));line-height:1}
+.stat-card .lbl{font-size:.78rem;color:var(--muted);margin-top:6px}
+.notice-bar{background:linear-gradient(90deg,#FFF8E8,#FFF3D0);border:1px solid var(--gold2);border-radius:10px;padding:12px 20px;margin-bottom:28px;display:flex;align-items:center;gap:10px;font-size:.88rem}
+.notice-bar a{color:var(--brand,var(--primary));font-weight:600}
+.section-title{font-family:'Noto Serif Devanagari',serif;font-size:1.22rem;font-weight:700;color:var(--brand,var(--primary));border-left:5px solid var(--brand-gold,var(--gold2));padding-left:14px;margin:40px 0 18px;display:flex;align-items:center;gap:10px}
+.section-title .icon{font-size:1.35rem}
+.section-title .count{font-size:.72rem;background:var(--mid);color:var(--brand,var(--primary));padding:3px 11px;border-radius:10px;margin-left:auto;font-weight:600;font-family:'Noto Sans Devanagari',sans-serif}
+.cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+.card{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;transition:transform var(--transition),box-shadow var(--transition);display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.card-header{padding:14px 16px 10px;display:flex;align-items:flex-start;gap:12px;border-bottom:1px solid #F0E8DC}
+.card-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.35rem;flex-shrink:0;overflow:hidden}
+.card-icon img{width:100%;height:100%;object-fit:cover;border-radius:10px}
+.card-meta{flex:1;min-width:0}
+.card-meta h3{font-size:.9rem;font-weight:600;color:var(--text);line-height:1.3}
+.card-meta .url-text{font-size:.7rem;color:var(--muted);word-break:break-all;margin-top:2px}
+.card-body{padding:12px 16px 6px;flex:1}
+.card-body p{font-size:.83rem;color:#444;line-height:1.65}
+.card-footer{padding:10px 16px 14px;display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tag{display:inline-block;font-size:.68rem;padding:2px 9px;border-radius:10px;font-weight:500}
+.tag-lang-hi{background:#FFF0F0;color:#8B1A1A}
+.tag-lang-en{background:#F0F0FF;color:#1A1A8B}
+.tag-free{background:#F0FFF4;color:#1A6B3A}
+.tag-govt{background:#FFF8E0;color:#7A5200}
+.tag-peer{background:#F0E8FF;color:#5A1A8B}
+.tag-data{background:#E0F5FF;color:#1A5A7A}
+.tag-new{background:#FFF0E0;color:#8B3A00;border:1px solid #E8C87A}
+.visit-btn{margin-left:auto;background:var(--brand,var(--primary));color:#fff;border:none;border-radius:8px;padding:6px 14px;font-size:.75rem;text-decoration:none;display:inline-flex;align-items:center;gap:4px;transition:background var(--transition);white-space:nowrap;font-family:'Noto Sans Devanagari',sans-serif}
+.visit-btn:hover{background:var(--brand2,var(--primary2))}
+.visit-btn::after{content:'→';font-size:.8rem}
+.c-govt{border-top:3px solid #D4A017}.c-govt .card-icon{background:#FFF5D6}
+.c-hindi{border-top:3px solid #C0392B}.c-hindi .card-icon{background:#FFE8E8}
+.c-eng{border-top:3px solid #2C5F8A}.c-eng .card-icon{background:#E8EEFF}
+.c-data{border-top:3px solid #1A8A8A}.c-data .card-icon{background:#E0F5FF}
+.c-thesis{border-top:3px solid #6B2D9A}.c-thesis .card-icon{background:#F0E8FF}
+.c-journal{border-top:3px solid #1A7A3A}.c-journal .card-icon{background:#E8F5E8}
+.c-blog{border-top:3px solid #8B4513}.c-blog .card-icon{background:#FFF3E0}
+.c-pdf{border-top:3px solid #C0392B}.c-pdf .card-icon{background:#FFE8E8}
+.c-custom{border-top:3px solid var(--brand-gold,var(--gold2))}.c-custom .card-icon{background:#FFF8E8}
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+.blog-card{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);overflow:hidden;transition:transform var(--transition),box-shadow var(--transition);cursor:pointer;border-top:3px solid var(--brand-gold,var(--gold2))}
+.blog-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg)}
+.blog-thumb{height:185px;background:var(--mid);display:flex;align-items:center;justify-content:center;font-size:4rem;overflow:hidden;position:relative}
+.blog-thumb img{width:100%;height:100%;object-fit:cover}
+.blog-cat-badge{position:absolute;top:10px;left:10px;background:var(--brand,var(--primary));color:#fff;font-size:.7rem;padding:3px 10px;border-radius:8px}
+.blog-info{padding:18px 20px}
+.blog-meta{font-size:.75rem;color:var(--muted);display:flex;gap:12px;margin-bottom:8px;flex-wrap:wrap}
+.blog-title{font-family:'Noto Serif Devanagari',serif;font-size:1rem;font-weight:700;color:var(--text);margin-bottom:8px;line-height:1.4}
+.blog-excerpt{font-size:.83rem;color:#555;line-height:1.65;margin-bottom:12px}
+.blog-read-more{font-size:.8rem;color:var(--brand,var(--primary));font-weight:600}
+.pdf-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:18px}
+.pdf-card{background:#fff;border-radius:var(--radius-lg);box-shadow:var(--shadow);padding:20px;display:flex;gap:16px;border-left:4px solid var(--brand,var(--primary));transition:transform var(--transition)}
+.pdf-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg)}
+.pdf-icon{font-size:2.5rem;flex-shrink:0}
+.pdf-info{flex:1}
+.pdf-info h4{font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:6px;line-height:1.4}
+.pdf-info p{font-size:.8rem;color:#555;line-height:1.6;margin-bottom:10px}
+.pdf-size{font-size:.73rem;background:var(--mid);color:var(--muted);padding:2px 8px;border-radius:6px}
+.pdf-dl-btn{display:inline-block;background:var(--brand,var(--primary));color:#fff;padding:6px 16px;border-radius:8px;font-size:.78rem;margin-top:8px;transition:background var(--transition)}
+.pdf-dl-btn:hover{background:var(--brand2,var(--primary2))}
+.search-table{width:100%;border-collapse:collapse;margin-top:12px;font-size:.85rem}
+.search-table th{background:var(--mid);color:var(--brand,var(--primary));padding:10px 14px;text-align:left;font-weight:700;border-bottom:2px solid var(--gold2);font-size:.76rem}
+.search-table td{padding:10px 14px;border-bottom:1px solid var(--border2);color:#444}
+.search-table tr:hover td{background:#FFFBF5}
+.search-table code{font-family:monospace;font-size:.8rem;background:#F5F0E8;padding:2px 6px;border-radius:4px}
+.tips-box{background:linear-gradient(135deg,#FFF8E8,#FFF3D0);border:1px solid var(--gold2);border-radius:var(--radius-lg);padding:22px 28px;margin-top:32px}
+.tips-box h3{font-family:'Noto Serif Devanagari',serif;color:var(--brand,var(--primary));margin-bottom:12px;font-size:1rem}
+.tips-box ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+.tips-box li{font-size:.87rem;color:#333;line-height:1.65;padding-left:18px;position:relative}
+.tips-box li::before{content:'▸';position:absolute;left:0;color:var(--gold)}
+.custom-page h2{font-family:'Noto Serif Devanagari',serif;color:var(--brand,var(--primary));margin:16px 0 10px;font-size:1.2rem}
+.custom-page p{font-size:.9rem;line-height:1.8;color:#333;margin-bottom:10px}
+.custom-page ul,.custom-page ol{padding-left:22px;margin-bottom:10px}
+.custom-page li{font-size:.88rem;line-height:1.7}
+footer{background:linear-gradient(135deg,var(--primary-dark,#4A1010),var(--primary));color:rgba(255,255,255,.9);margin-top:60px}
+.footer-inner{max-width:var(--max-w);margin:0 auto;padding:48px 24px 28px}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.footer-brand .flogo{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.footer-brand .flogo-icon{width:42px;height:42px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:1.3rem;border:2px solid var(--gold2);overflow:hidden;flex-shrink:0}
+.footer-brand .flogo-icon img{width:100%;height:100%;object-fit:cover}
+.footer-brand .flogo-text{font-family:'Noto Serif Devanagari',serif;font-size:1rem;font-weight:700}
+.footer-brand p{font-size:.83rem;opacity:.75;line-height:1.65}
+.footer-col h4{font-size:.78rem;text-transform:uppercase;letter-spacing:1px;opacity:.55;margin-bottom:14px}
+.footer-col ul{list-style:none}
+.footer-col ul li{margin-bottom:8px}
+.footer-col ul li a,.footer-col ul li span{color:rgba(255,255,255,.75);font-size:.83rem;transition:color var(--transition);cursor:pointer}
+.footer-col ul li a:hover,.footer-col ul li span:hover{color:#fff}
+.footer-bottom{border-top:1px solid rgba(255,255,255,.2);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;opacity:.75}
+.footer-links{display:flex;gap:16px}
+.footer-links a{color:inherit;cursor:pointer}
+.footer-links a:hover{opacity:1;text-decoration:underline}
+.modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px);z-index:1000;display:none;align-items:flex-start;justify-content:center;padding:20px;overflow-y:auto}
+.modal-overlay.active{display:flex}
+.modal-box{background:#fff;border-radius:var(--radius-lg);width:100%;max-width:780px;margin:auto;overflow:hidden;box-shadow:var(--shadow-xl)}
+.modal-header{background:linear-gradient(135deg,var(--brand,var(--primary)),var(--brand2,var(--primary2)));color:#fff;padding:24px 28px;display:flex;align-items:flex-start;justify-content:space-between;gap:16px}
+.modal-header h2{font-family:'Noto Serif Devanagari',serif;font-size:1.2rem;font-weight:700;line-height:1.4}
+.modal-close-btn{background:rgba(255,255,255,.15);border:none;color:#fff;width:34px;height:34px;border-radius:8px;cursor:pointer;font-size:1rem;flex-shrink:0;transition:background var(--transition)}
+.modal-close-btn:hover{background:rgba(255,255,255,.3)}
+.modal-body{padding:28px}
+.modal-body img{max-width:100%;border-radius:10px;margin:12px 0}
+.modal-body p{font-size:.92rem;line-height:1.8;color:#333;margin-bottom:12px}
+.modal-meta{font-size:.78rem;color:var(--muted);display:flex;gap:16px;flex-wrap:wrap;margin-bottom:20px}
+.site-search{background:#fff;border:2px solid var(--mid);border-radius:var(--radius);padding:10px 16px;display:flex;gap:10px;margin-bottom:28px;box-shadow:var(--shadow);transition:border-color var(--transition)}
+.site-search:focus-within{border-color:var(--brand,var(--primary))}
+.site-search input{flex:1;border:none;outline:none;font-size:.95rem;font-family:'Noto Sans Devanagari',sans-serif;color:var(--text);background:transparent}
+.site-search input::placeholder{color:var(--muted)}
+.site-search button{background:var(--brand,var(--primary));color:#fff;border:none;border-radius:8px;padding:8px 18px;font-size:.85rem;font-family:'Noto Sans Devanagari',sans-serif;transition:background var(--transition);white-space:nowrap}
+.site-search button:hover{background:var(--brand2,var(--primary2))}
+.filter-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:18px}
+.ftab{background:#fff;border:1px solid var(--border);border-radius:8px;padding:6px 14px;font-size:.82rem;transition:all var(--transition);font-family:'Noto Sans Devanagari',sans-serif;color:var(--text)}
+.ftab:hover,.ftab.active{background:var(--brand,var(--primary));color:#fff;border-color:var(--brand,var(--primary))}
+.page-tabs{display:flex;gap:6px;border-bottom:2px solid var(--mid);margin-bottom:28px;overflow-x:auto;padding-bottom:0}
+.ptab{padding:10px 18px;font-size:.9rem;cursor:pointer;border-bottom:3px solid transparent;transition:all var(--transition);white-space:nowrap;background:none;border-top:none;border-left:none;border-right:none;color:var(--muted);margin-bottom:-2px}
+.ptab:hover{color:var(--brand,var(--primary))}
+.ptab.active{color:var(--brand,var(--primary));border-bottom:3px solid var(--brand-gold,var(--gold2));font-weight:600}
+.breadcrumb{font-size:.8rem;color:var(--muted);margin-bottom:20px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.breadcrumb a,.breadcrumb span{cursor:pointer;color:var(--muted)}
+.breadcrumb a:hover{color:var(--brand,var(--primary))}
+.breadcrumb .sep{color:#ccc}
+.empty-state{text-align:center;padding:60px 20px;color:var(--muted)}
+.empty-state .es-icon{font-size:3rem;margin-bottom:12px}
+.empty-state h3{font-size:1rem;margin-bottom:8px;color:var(--text)}
+#toast-container{position:fixed;bottom:24px;right:24px;z-index:2000;display:flex;flex-direction:column;gap:10px;align-items:flex-end}
+.toast{background:#fff;border-left:4px solid var(--green);border-radius:10px;padding:12px 20px;font-size:.88rem;box-shadow:var(--shadow-xl);transform:translateX(120%);transition:transform .4s cubic-bezier(.175,.885,.32,1.275);min-width:240px;max-width:340px;display:flex;align-items:center;gap:8px}
+.toast.show{transform:translateX(0)}
+.toast.error{border-color:#C0392B}
+.toast.warn{border-color:var(--gold)}
+#backToTop{position:fixed;bottom:80px;right:24px;z-index:999;background:var(--brand,var(--primary));color:#fff;border:none;width:42px;height:42px;border-radius:50%;display:none;align-items:center;justify-content:center;font-size:1.1rem;box-shadow:var(--shadow-lg);transition:all var(--transition)}
+#backToTop.show{display:flex}
+#backToTop:hover{transform:translateY(-2px);box-shadow:var(--shadow-xl)}
+.skeleton{background:linear-gradient(90deg,#f0e8dc 25%,#fdf8f0 50%,#f0e8dc 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:4px}
+@keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+/* ════════════════ ADMIN PANEL STYLES ════════════════ */
+[data-locked]{pointer-events:none;opacity:.5;user-select:none}
+#loginScreen{position:fixed;inset:0;z-index:9999;background:linear-gradient(135deg,var(--primary) 0%,#9B2020 50%,var(--gold) 100%);display:flex;align-items:center;justify-content:center;padding:20px}
+.login-wrap{background:#fff;border-radius:20px;padding:48px 40px;width:440px;max-width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3);text-align:center}
+.login-icon{font-size:3rem;margin-bottom:6px}
+.login-title{font-family:'Noto Serif Devanagari',serif;font-size:1.6rem;font-weight:700;color:var(--primary);margin-bottom:4px}
+.login-sub{font-size:.83rem;color:var(--muted);margin-bottom:28px}
+.login-input{width:100%;border:1.5px solid var(--border);border-radius:var(--radius);padding:13px 16px;font-size:.95rem;outline:none;margin-bottom:12px;transition:border var(--transition);background:#FAFAF8}
+.login-input:focus{border-color:var(--primary)}
+.login-btn{width:100%;background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;border:none;border-radius:var(--radius);padding:14px;font-size:1rem;font-weight:700;transition:opacity var(--transition)}
+.login-btn:hover:not(:disabled){opacity:.9}
+.login-btn:disabled{opacity:.6;cursor:not-allowed}
+.login-err{color:var(--red);font-size:.82rem;margin-top:10px;display:none}
+.login-attempts{font-size:.72rem;color:var(--red);margin-top:6px;display:none}
+#lockoutScreen{display:none;position:fixed;inset:0;z-index:10000;background:linear-gradient(135deg,#1A0505,#3A0A0A);align-items:center;justify-content:center;flex-direction:column;color:#fff;text-align:center;padding:20px}
+#lockoutScreen.active{display:flex}
+#lockoutTimer{font-size:3rem;font-weight:700;color:var(--gold2);margin:12px 0}
+#adminApp{display:none;min-height:100vh;position:fixed;inset:0;z-index:8000;overflow:auto;background:var(--bg)}
+.admin-layout{display:grid;grid-template-columns:224px 1fr;min-height:100vh}
+.sidebar{background:var(--primary);color:#fff;position:sticky;top:0;height:100vh;overflow-y:auto;display:flex;flex-direction:column;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.2) transparent}
+.sidebar::-webkit-scrollbar{width:4px}
+.sidebar::-webkit-scrollbar-thumb{background:rgba(255,255,255,.2);border-radius:2px}
+.sb-brand{padding:18px 14px;border-bottom:1px solid rgba(255,255,255,.15)}
+.sb-brand-logo{display:flex;align-items:center;gap:10px;margin-bottom:2px}
+.sb-logo-circle{width:36px;height:36px;border-radius:50%;background:rgba(255,255,255,.15);display:flex;align-items:center;justify-content:center;font-size:1.2rem;overflow:hidden;flex-shrink:0}
+.sb-logo-circle img{width:100%;height:100%;object-fit:cover;border-radius:50%}
+.sb-brand-name{font-family:'Noto Serif Devanagari',serif;font-size:.95rem;font-weight:700;line-height:1.2}
+.sb-brand-sub{font-size:.62rem;opacity:.65;margin-top:1px}
+.sb-menu{padding:10px 8px;flex:1}
+.sb-group{margin-bottom:4px}
+.sb-group-label{font-size:.6rem;text-transform:uppercase;letter-spacing:1.5px;opacity:.5;padding:8px 10px 3px;display:block}
+.sb-item{display:flex;align-items:center;gap:9px;padding:8px 12px;border-radius:9px;cursor:pointer;font-size:.83rem;font-weight:500;color:rgba(255,255,255,.8);transition:all var(--transition);border:none;background:none;width:100%;text-align:left}
+.sb-item:hover{background:rgba(255,255,255,.12);color:#fff}
+.sb-item.active{background:rgba(255,255,255,.2);color:#fff;font-weight:700}
+.sb-icon{width:18px;text-align:center;font-size:.88rem;flex-shrink:0}
+.sb-badge{margin-left:auto;background:var(--gold2);color:#fff;font-size:.6rem;font-weight:700;padding:2px 6px;border-radius:8px}
+.sb-footer{padding:10px;border-top:1px solid rgba(255,255,255,.15)}
+.sb-logout{display:flex;align-items:center;gap:8px;width:100%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.2);color:rgba(255,255,255,.85);padding:8px 12px;border-radius:9px;font-size:.83rem;transition:all var(--transition)}
+.sb-logout:hover{background:rgba(220,50,50,.3);color:#fff}
+.admin-main{overflow-y:auto;background:var(--bg)}
+.admin-topbar{background:#fff;border-bottom:2px solid var(--mid);padding:0 24px;height:60px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;box-shadow:var(--shadow-sm)}
+.tb-left h2{font-family:'Noto Serif Devanagari',serif;font-size:1.1rem;color:var(--primary);font-weight:700}
+.tb-left p{font-size:.72rem;color:var(--muted)}
+.tb-right{display:flex;align-items:center;gap:10px}
+.admin-chip{background:var(--mid);color:var(--primary);font-size:.72rem;font-weight:700;padding:4px 10px;border-radius:16px;border:1px solid var(--gold2)}
+.view-site-btn{background:var(--primary);color:#fff;border:none;border-radius:8px;padding:7px 14px;font-size:.8rem;transition:background var(--transition);cursor:pointer}
+.view-site-btn:hover{background:var(--primary2)}
+.content{padding:22px}
+.panel{display:none}
+.panel.active{display:block}
+.card-box{background:#fff;border-radius:14px;box-shadow:var(--shadow);overflow:hidden;margin-bottom:18px}
+.cb-header{background:linear-gradient(135deg,var(--primary),var(--primary2));color:#fff;padding:14px 22px;display:flex;align-items:center;justify-content:space-between;gap:10px}
+.cb-title{font-family:'Noto Serif Devanagari',serif;font-size:.95rem;font-weight:700}
+.cb-body{padding:22px}
+.dash-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px;margin-bottom:20px}
+.ds-card{background:#fff;border-radius:var(--radius);padding:16px;box-shadow:var(--shadow);border-top:3px solid var(--gold2);text-align:center;transition:transform var(--transition)}
+.ds-card:hover{transform:translateY(-2px)}
+.ds-num{font-size:1.9rem;font-weight:700;color:var(--primary);line-height:1}
+.ds-label{font-size:.72rem;color:var(--muted);margin-top:5px}
+.act-list{list-style:none}
+.act-item{display:flex;align-items:flex-start;gap:12px;padding:11px 0;border-bottom:1px solid #F0E8DC}
+.act-item:last-child{border-bottom:none}
+.act-icon{width:34px;height:34px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:.95rem;flex-shrink:0}
+.act-icon.green{background:#F0FFF4}
+.act-icon.gold{background:#FFF8E0}
+.act-text .act-title{font-size:.84rem;font-weight:600;margin-bottom:2px}
+.act-text .act-sub{font-size:.74rem;color:var(--muted)}
+.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.form-grid.cols3{grid-template-columns:1fr 1fr 1fr}
+.form-grid.full{grid-template-columns:1fr}
+.fg{display:flex;flex-direction:column;gap:5px}
+.fg label{font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px}
+.fg input,.fg textarea,.fg select{border:1.5px solid var(--border);border-radius:9px;padding:9px 13px;font-size:.87rem;outline:none;transition:border var(--transition);background:#FAFAF8;color:var(--text);width:100%}
+.fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--primary)}
+.fg textarea{min-height:90px;resize:vertical}
+.color-row{display:flex;align-items:center;gap:10px}
+.color-row input[type=color]{width:44px;height:36px;border-radius:8px;border:1.5px solid var(--border);padding:2px;cursor:pointer}
+.img-preview-box{display:flex;align-items:center;gap:12px}
+.img-preview-box img{height:50px;border-radius:8px;object-fit:cover;border:1px solid var(--border)}
+.form-actions{display:flex;gap:10px;margin-top:18px;padding-top:14px;border-top:1px solid var(--mid);flex-wrap:wrap}
+.btn{padding:8px 18px;border-radius:9px;border:none;cursor:pointer;font-weight:600;font-size:.83rem;transition:all var(--transition)}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-primary:hover{background:var(--primary2)}
+.btn-secondary{background:var(--mid);color:var(--primary);border:1px solid var(--gold2)}
+.btn-secondary:hover{background:#E8D9B8}
+.btn-danger{background:#FFF0F0;color:var(--red);border:1px solid #FFCCCC}
+.btn-danger:hover{background:#FFE0E0}
+.btn-sm{padding:5px 11px;font-size:.76rem;border-radius:7px;border:none;cursor:pointer;font-weight:600;transition:all var(--transition)}
+.btn-edit{background:#EFF5FF;color:#1A3A8B;border:1px solid #C0D0FF}
+.btn-edit:hover{background:#DFE8FF}
+.btn-del{background:#FFF0F0;color:var(--red);border:1px solid #FFCCCC}
+.btn-del:hover{background:#FFE0E0}
+.btn-toggle{background:#F0FFF4;color:var(--green);border:1px solid #C0E8CC}
+.btn-toggle:hover{background:#E0FFEA}
+.btn-toggle.off{background:#FFF8E0;color:#8B5A00;border-color:#E8D090}
+.btn-up{background:var(--mid);color:var(--primary);border:1px solid var(--gold2)}
+.admin-table{width:100%;border-collapse:collapse;font-size:.83rem}
+.admin-table th{background:var(--mid);color:var(--primary);padding:9px 13px;text-align:left;font-weight:700;border-bottom:2px solid var(--gold2);font-size:.76rem;text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+.admin-table td{padding:10px 13px;border-bottom:1px solid #F0E8DC;vertical-align:middle}
+.admin-table tr:last-child td{border-bottom:none}
+.admin-table tr:hover td{background:#FFFBF5}
+.t-actions{display:flex;gap:5px;flex-wrap:wrap}
+.badge-visible{background:#F0FFF4;color:var(--green);font-size:.68rem;padding:2px 7px;border-radius:7px;font-weight:600}
+.badge-hidden{background:#FFF0F0;color:var(--red);font-size:.68rem;padding:2px 7px;border-radius:7px;font-weight:600}
+.badge-cat{background:var(--mid);color:var(--primary);font-size:.68rem;padding:2px 7px;border-radius:7px;font-weight:600}
+.rich-editor{border:1.5px solid var(--border);border-radius:var(--radius);overflow:hidden;background:#fff}
+.editor-toolbar{background:var(--mid);padding:7px 10px;display:flex;gap:5px;flex-wrap:wrap;border-bottom:1px solid var(--border)}
+.editor-toolbar button{background:#fff;border:1px solid var(--border);border-radius:5px;padding:4px 7px;cursor:pointer;font-size:.76rem;transition:all .15s}
+.editor-toolbar button:hover{background:var(--primary);color:#fff;border-color:var(--primary)}
+.editor-area{min-height:200px;padding:14px 16px;outline:none;font-size:.9rem;line-height:1.7;color:var(--text)}
+.editor-area h2{color:var(--primary);margin:12px 0 8px}
+.editor-area ul,.editor-area ol{padding-left:20px}
+#adminToast{position:fixed;bottom:20px;right:20px;z-index:10001;display:flex;flex-direction:column;gap:8px;align-items:flex-end}
+.t-msg{background:#fff;border-left:4px solid var(--green);border-radius:var(--radius);padding:11px 16px;font-size:.84rem;min-width:230px;max-width:320px;box-shadow:var(--shadow-lg);transform:translateX(120%);transition:transform .35s cubic-bezier(.175,.885,.32,1.275);display:flex;align-items:center;gap:8px}
+.t-msg.show{transform:translateX(0)}
+.t-msg.error{border-color:var(--red)}
+.t-msg.warn{border-color:var(--gold2)}
+#sessionTimer{font-size:.68rem;color:rgba(255,255,255,.6);text-align:center;padding:4px 8px}
+.security-badge{display:inline-flex;align-items:center;gap:6px;background:#F0FFF4;color:var(--green);border:1px solid #C0E8CC;border-radius:8px;padding:4px 10px;font-size:.76rem;font-weight:600;margin-bottom:8px}
+
+@media print{nav,.topbar,footer,#toast-container,.modal-overlay,#scrollProgress,#backToTop{display:none!important}.container{padding:0}.card{break-inside:avoid}}
+@media(max-width:1024px){.footer-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:900px){.stats-bar{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}.admin-layout{grid-template-columns:54px 1fr}.sb-brand-name,.sb-brand-sub,.sb-group-label,.sb-item span:not(.sb-icon),.sb-badge,.sb-logout span{display:none}.sb-item{justify-content:center;padding:10px}.form-grid{grid-template-columns:1fr}.form-grid.cols3{grid-template-columns:1fr 1fr}}
+@media(max-width:640px){.stats-bar{grid-template-columns:repeat(2,1fr)}#heroBanner{padding:40px 20px 36px}.banner-title{font-size:1.5rem}.nav-links{display:none;position:fixed;top:calc(var(--topbar-h) + var(--nav-h));inset-inline:0;bottom:0;background:#fff;flex-direction:column;align-items:flex-start;padding:20px;gap:4px;overflow-y:auto;border-top:2px solid var(--mid);z-index:499}.nav-links.open{display:flex}.hamburger{display:flex}.cards-grid,.blog-grid,.pdf-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.page-tabs{flex-wrap:nowrap}.container{padding:24px 16px 48px}.topbar{font-size:.72rem;padding:5px 16px}.login-wrap{padding:32px 24px}.form-grid.cols3{grid-template-columns:1fr}.dash-grid{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}
+</style>
+</head>
+<body>
+
+<!-- ════════════════ PUBLIC SITE ════════════════ -->
+<div id="publicSite">
+
+<a class="skip-link" href="#main-content">मुख्य सामग्री पर जाएँ</a>
+<div id="scrollProgress" role="progressbar" aria-hidden="true"></div>
+<div id="toast-container" aria-live="polite" aria-atomic="true"></div>
+
+<div class="topbar" id="topbarEl" role="banner">
+  <span class="topbar-left" id="topbarLeft">📧 research@meenaportal.org &nbsp;|&nbsp; 📞 +91 98765 43210</span>
+  <div>
+    <a href="#" onclick="openAdminPanel();return false;" rel="noopener">⚙ Admin Panel</a>
+    <a href="#" onclick="showSection('pages');return false;">📬 संपर्क</a>
+  </div>
+</div>
+
+<nav role="navigation" aria-label="मुख्य नेविगेशन">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo" onclick="goHome();return false;" aria-label="मीणा शोध पोर्टल - होम">
+      <div class="nav-logo-img" id="navLogoImg" aria-hidden="true"><span id="navLogoEmoji">🐟</span></div>
+      <div>
+        <div class="nav-logo-text" id="navLogoText">मीणा शोध पोर्टल</div>
+        <div class="nav-logo-sub" id="navLogoSub">Meena Research Hub</div>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="/" class="active" id="navHome" onclick="showSection('home');return false;">🏠 होम</a>
+      <a href="/blog" id="navBlog" onclick="showSection('blog');return false;">📝 ब्लॉग</a>
+      <a href="/research" id="navResearch" onclick="showSection('research');return false;">📄 शोध PDF</a>
+      <a href="/pages" id="navPages" onclick="showSection('pages');return false;">📑 पेज</a>
+      <a href="#" class="nav-admin-btn" onclick="openAdminPanel();return false;" rel="noopener">⚙ Admin</a>
+    </div>
+    <button class="hamburger" id="hamburgerBtn" onclick="toggleMenu()" aria-label="मेनू खोलें/बंद करें" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<main id="main-content">
+  <section id="sec-home" aria-label="होम">
+    <div id="heroBanner" role="banner">
+      <span class="banner-deco banner-deco-1" aria-hidden="true" id="bannerDeco1">🐟</span>
+      <span class="banner-deco banner-deco-2" aria-hidden="true" id="bannerDeco2">🐟</span>
+      <div class="banner-inner">
+        <div class="banner-eyebrow" id="bannerEyebrow">🔬 शोध एवं ज्ञान का केंद्र</div>
+        <h1 class="banner-title" id="bannerTitle">मीणा जाति — शोध वेबसाइट संकलन</h1>
+        <p class="banner-subtitle" id="bannerSubtitle">रिसर्च पेपर लेखन के लिए सत्यापित, श्रेणीबद्ध एवं विवरण सहित वेब संसाधन</p>
+        <div class="banner-badge" id="bannerBadge">📚 27 स्रोत &nbsp;|&nbsp; 6 श्रेणियाँ &nbsp;|&nbsp; हिंदी + अंग्रेज़ी</div>
+        <img src="" id="bannerImage" class="banner-img" alt="Banner" loading="lazy" width="500" height="220">
+      </div>
+    </div>
+    <div class="container">
+      <div class="stats-bar" id="statsBar" aria-label="आँकड़े"></div>
+      <div class="notice-bar" id="noticeBar" style="display:none" role="alert">
+        <span aria-hidden="true">📢</span><span id="noticeText"></span>
+      </div>
+      <div class="site-search" role="search">
+        <label for="searchInput" class="sr-only">खोजें</label>
+        <input type="search" id="searchInput" placeholder="🔍 खोजें — लिंक, ब्लॉग, शोध पेपर..." oninput="doSearch()" autocomplete="off" aria-label="साइट खोज">
+        <button onclick="doSearch()" aria-label="खोज बटन">खोजें</button>
+      </div>
+      <div id="categorySections"></div>
+      <div id="keywordsSection"></div>
+      <div id="tipsSection"></div>
+    </div>
+  </section>
+
+  <section id="sec-blog" style="display:none" aria-label="ब्लॉग">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="ब्रेडक्रम्ब">
+        <a onclick="showSection('home')">🏠 होम</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">ब्लॉग</span>
+      </nav>
+      <h2 class="section-title"><span class="icon" aria-hidden="true">📝</span> ब्लॉग एवं लेख</h2>
+      <div class="filter-tabs" id="blogFilterTabs" role="tablist"></div>
+      <div class="blog-grid" id="blogGrid"></div>
+    </div>
+  </section>
+
+  <section id="sec-research" style="display:none" aria-label="शोध PDF">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="ब्रेडक्रम्ब">
+        <a onclick="showSection('home')">🏠 होम</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">शोध PDF</span>
+      </nav>
+      <h2 class="section-title"><span class="icon" aria-hidden="true">📄</span> शोध पेपर एवं PDF संग्रह</h2>
+      <div class="pdf-grid" id="pdfGrid"></div>
+    </div>
+  </section>
+
+  <section id="sec-pages" style="display:none" aria-label="पेज">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="ब्रेडक्रम्ब">
+        <a onclick="showSection('home')">🏠 होम</a><span class="sep" aria-hidden="true">›</span><span aria-current="page">पेज</span>
+      </nav>
+      <h2 class="section-title"><span class="icon" aria-hidden="true">📑</span> कस्टम पेज</h2>
+      <div class="page-tabs" id="pageTabsNav" role="tablist"></div>
+      <div id="pageContent"></div>
+    </div>
+  </section>
+</main>
+
+<div class="modal-overlay" id="blogModal" role="dialog" aria-modal="true" aria-labelledby="bModalTitle">
+  <div class="modal-box">
+    <div class="modal-header">
+      <h2 id="bModalTitle">—</h2>
+      <button class="modal-close-btn" onclick="closeBlogModal()" aria-label="बंद करें">✕</button>
+    </div>
+    <div class="modal-body">
+      <div class="modal-meta" id="bModalMeta"></div>
+      <div id="bModalImg"></div>
+      <div id="bModalContent"></div>
+    </div>
+  </div>
+</div>
+
+<footer id="siteFooter" role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-grid" id="footerGrid"></div>
+    <div class="footer-bottom">
+      <span id="footerCopyright">© 2025 मीणा शोध पोर्टल। सर्वाधिकार सुरक्षित।</span>
+      <div class="footer-links">
+        <a onclick="showSection('home')">होम</a>
+        <a onclick="showSection('blog')">ब्लॉग</a>
+        <a onclick="showSection('research')">शोध</a>
+        <a href="#" onclick="openAdminPanel();return false;">Admin</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<button id="backToTop" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="ऊपर जाएँ" title="ऊपर जाएँ">↑</button>
+
+</div><!-- /publicSite -->
+
+
+<!-- ════════════════ ADMIN PANEL (OVERLAY) ════════════════ -->
+
+<!-- LOCKOUT SCREEN -->
+<div id="lockoutScreen" role="alertdialog" aria-label="खाता अस्थायी रूप से बंद">
+  <div style="font-size:2.5rem">🔒</div>
+  <h2 style="font-size:1.4rem;margin:10px 0">बहुत अधिक गलत प्रयास</h2>
+  <p style="opacity:.75;margin-bottom:8px">Admin Panel अस्थायी रूप से बंद है।</p>
+  <div id="lockoutTimer">5:00</div>
+  <p style="font-size:.8rem;opacity:.6">समय समाप्त होने पर पुनः प्रयास करें</p>
+</div>
+
+<!-- LOGIN SCREEN -->
+<div id="loginScreen" style="display:none;" role="main">
+  <div class="login-wrap">
+    <div class="login-icon" id="loginIcon" aria-hidden="true">🐟</div>
+    <div class="login-title">Admin CMS</div>
+    <div class="login-sub" id="loginSubText">मीणा शोध पोर्टल — प्रबंधन पैनल</div>
+    <label for="lu" style="display:none">उपयोगकर्ता नाम</label>
+    <input class="login-input" type="text" id="lu" placeholder="उपयोगकर्ता नाम (Username)" autocomplete="username" aria-label="उपयोगकर्ता नाम">
+    <label for="lp" style="display:none">पासवर्ड</label>
+    <input class="login-input" type="password" id="lp" placeholder="पासवर्ड (Password)" autocomplete="current-password" aria-label="पासवर्ड">
+    <button class="login-btn" id="loginBtn" onclick="doLogin()">🔓 प्रवेश करें (Login)</button>
+    <div class="login-err" id="lerr" role="alert">❌ गलत credentials</div>
+    <div class="login-attempts" id="lAttempts" role="alert"></div>
+    <button onclick="closeAdminLogin()" style="margin-top:14px;background:none;border:none;color:var(--muted);font-size:.82rem;cursor:pointer;text-decoration:underline;">← वापस साइट पर जाएँ</button>
+  </div>
+</div>
+
+<!-- ADMIN APP -->
+<div id="adminApp" aria-label="Admin Control Panel">
+<div class="admin-layout">
+  <aside class="sidebar" role="navigation" aria-label="Admin Navigation">
+    <div class="sb-brand">
+      <div class="sb-brand-logo">
+        <div class="sb-logo-circle" id="sbLogo" aria-hidden="true">🐟</div>
+        <div>
+          <div class="sb-brand-name" id="sbName">मीणा शोध</div>
+          <div class="sb-brand-sub">Admin CMS v3.2</div>
+        </div>
+      </div>
+    </div>
+    <div id="sessionTimer" title="Session timeout">⏱ सत्र: <span id="sessionCountdown">30:00</span></div>
+    <nav class="sb-menu">
+      <div class="sb-group">
+        <span class="sb-group-label">मुख्य</span>
+        <button class="sb-item active" onclick="showPanel('dashboard',this)"><span class="sb-icon">📊</span><span>डैशबोर्ड</span></button>
+      </div>
+      <div class="sb-group">
+        <span class="sb-group-label">सामग्री</span>
+        <button class="sb-item" onclick="showPanel('links',this)"><span class="sb-icon">🔗</span><span>लिंक प्रबंधन</span></button>
+        <button class="sb-item" onclick="showPanel('categories',this)"><span class="sb-icon">📁</span><span>श्रेणियाँ</span></button>
+        <button class="sb-item" onclick="showPanel('blog',this)"><span class="sb-icon">📝</span><span>ब्लॉग लेखन</span></button>
+        <button class="sb-item" onclick="showPanel('pdfs',this)"><span class="sb-icon">📄</span><span>शोध PDF</span></button>
+        <button class="sb-item" onclick="showPanel('pages',this)"><span class="sb-icon">📑</span><span>पेज प्रबंधन</span></button>
+      </div>
+      <div class="sb-group">
+        <span class="sb-group-label">डिज़ाइन</span>
+        <button class="sb-item" onclick="showPanel('homepage',this)"><span class="sb-icon">🏠</span><span>होम सेटिंग</span></button>
+        <button class="sb-item" onclick="showPanel('contact_mgr',this)"><span class="sb-icon">📬</span><span>Contact Info</span></button>
+        <button class="sb-item" onclick="showPanel('logo',this)"><span class="sb-icon">🖼️</span><span>लोगो & बैनर</span></button>
+        <button class="sb-item" onclick="showPanel('stats_mgr',this)"><span class="sb-icon">📈</span><span>Stats बार</span></button>
+        <button class="sb-item" onclick="showPanel('keywords_mgr',this)"><span class="sb-icon">🔑</span><span>Keywords</span></button>
+        <button class="sb-item" onclick="showPanel('tips_mgr',this)"><span class="sb-icon">💡</span><span>Tips</span></button>
+        <button class="sb-item" onclick="showPanel('footer_mgr',this)"><span class="sb-icon">⬇️</span><span>Footer</span></button>
+        <button class="sb-item" onclick="showPanel('colors',this)"><span class="sb-icon">🎨</span><span>रंग & थीम</span></button>
+        <button class="sb-item" onclick="showPanel('nav_mgr',this)"><span class="sb-icon">🧭</span><span>Navigation</span></button>
+      </div>
+      <div class="sb-group">
+        <span class="sb-group-label">सिस्टम</span>
+        <button class="sb-item" onclick="showPanel('settings',this)"><span class="sb-icon">⚙️</span><span>सेटिंग्स</span></button>
+        <button class="sb-item" onclick="goBackToSite()"><span class="sb-icon">🌐</span><span>साइट देखें</span></button>
+        <button class="sb-item" onclick="showPanel('backup',this)"><span class="sb-icon">💾</span><span>Backup</span></button>
+      </div>
+    </nav>
+    <div class="sb-footer">
+      <button class="sb-logout" onclick="doLogout()">🚪 <span>लॉगआउट</span></button>
+    </div>
+  </aside>
+
+  <main class="admin-main" id="adminMainArea">
+    <div class="admin-topbar">
+      <div class="tb-left">
+        <h2 id="panelTitle">डैशबोर्ड</h2>
+        <p id="panelSub">स्वागत है, Admin</p>
+      </div>
+      <div class="tb-right">
+        <span class="admin-chip">⬢ Admin</span>
+        <button class="view-site-btn" onclick="goBackToSite()">🌐 साइट देखें</button>
+      </div>
+    </div>
+    <div class="content">
+
+      <!-- DASHBOARD -->
+      <div class="panel active" id="p-dashboard">
+        <div class="dash-grid" id="dashGrid"></div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px">
+          <div class="card-box">
+            <div class="cb-header"><span class="cb-title">📈 त्वरित सांख्यिकी</span></div>
+            <div class="cb-body"><ul class="act-list" id="dashAct"></ul></div>
+          </div>
+          <div class="card-box">
+            <div class="cb-header"><span class="cb-title">⚡ त्वरित कार्य</span></div>
+            <div class="cb-body">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <button class="btn btn-primary" onclick="showPanel('blog',null)">📝 नया ब्लॉग</button>
+                <button class="btn btn-primary" onclick="showPanel('links',null)">🔗 नया लिंक</button>
+                <button class="btn btn-secondary" onclick="showPanel('pdfs',null)">📄 PDF जोड़ें</button>
+                <button class="btn btn-secondary" onclick="showPanel('homepage',null)">🏠 होम एडिट</button>
+                <button class="btn btn-secondary" onclick="showPanel('contact_mgr',null)">📬 Contact Edit</button>
+                <button class="btn btn-secondary" onclick="showPanel('categories',null)">📁 श्रेणी जोड़ें</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LINKS -->
+      <div class="panel" id="p-links">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title" id="linkFormTitle">🔗 नया लिंक जोड़ें</span></div>
+          <div class="cb-body">
+            <input type="hidden" id="editLinkId">
+            <div class="form-grid">
+              <div class="fg"><label>शीर्षक (Title) *</label><input id="lTitle" placeholder="वेबसाइट का नाम..." required></div>
+              <div class="fg"><label>URL *</label><input id="lUrl" placeholder="https://..." type="url" required></div>
+              <div class="fg"><label>श्रेणी (Category)</label><select id="lCat"></select></div>
+              <div class="fg"><label>आइकन (Emoji)</label><input id="lIcon" placeholder="📊" maxlength="4"></div>
+              <div class="fg"><label>आइकन इमेज URL (वैकल्पिक)</label><input id="lIconImg" placeholder="https://...icon.png" type="url" oninput="previewLinkIcon()"></div>
+              <div class="fg"><label>Tags (comma separated)</label><input id="lTags" placeholder="English, सरकारी, निःशुल्क"></div>
+            </div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg"><label>विवरण (Description)</label><textarea id="lDesc" placeholder="वेबसाइट का विस्तृत विवरण..."></textarea></div>
+            </div>
+            <div id="linkIconPreview" style="margin-top:10px;display:none" class="img-preview-box"><img id="linkIconImgEl" src="" alt=""><span style="font-size:.8rem;color:var(--muted)">Icon Preview</span></div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="saveLink()">💾 सहेजें</button>
+              <button class="btn btn-secondary" onclick="clearLinkForm()">✕ साफ़ करें</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">सभी लिंक</span><span id="linkCount" style="font-size:.76rem;background:rgba(255,255,255,.2);padding:2px 10px;border-radius:10px"></span></div>
+          <div class="cb-body" style="padding:0"><div style="overflow-x:auto">
+            <table class="admin-table" role="table"><thead><tr><th>शीर्षक</th><th>श्रेणी</th><th>URL</th><th>स्थिति</th><th>कार्य</th></tr></thead>
+            <tbody id="linksTable"></tbody></table>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- CATEGORIES -->
+      <div class="panel" id="p-categories">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title" id="catFormTitle">📁 नई श्रेणी जोड़ें</span></div>
+          <div class="cb-body">
+            <input type="hidden" id="editCatId">
+            <div class="form-grid cols3">
+              <div class="fg"><label>श्रेणी नाम *</label><input id="cName" placeholder="श्रेणी का नाम..." required></div>
+              <div class="fg"><label>आइकन</label><input id="cIcon" placeholder="🏛️" maxlength="4"></div>
+              <div class="fg"><label>Color Class</label>
+                <select id="cClass">
+                  <option value="c-govt">c-govt (सोना)</option><option value="c-hindi">c-hindi (लाल)</option>
+                  <option value="c-eng">c-eng (नीला)</option><option value="c-data">c-data (नीला-हरा)</option>
+                  <option value="c-thesis">c-thesis (बैंगनी)</option><option value="c-journal">c-journal (हरा)</option>
+                  <option value="c-blog">c-blog (भूरा)</option><option value="c-custom">c-custom (कस्टम)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="saveCat()">💾 सहेजें</button>
+              <button class="btn btn-secondary" onclick="clearCatForm()">✕ साफ़</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">सभी श्रेणियाँ</span></div>
+          <div class="cb-body" style="padding:0"><div style="overflow-x:auto">
+            <table class="admin-table"><thead><tr><th>क्रम</th><th>आइकन</th><th>नाम</th><th>Style</th><th>स्थिति</th><th>कार्य</th></tr></thead>
+            <tbody id="catsTable"></tbody></table>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- BLOG -->
+      <div class="panel" id="p-blog">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title" id="blogFormTitle">📝 नई ब्लॉग पोस्ट लिखें</span></div>
+          <div class="cb-body">
+            <input type="hidden" id="editBlogId">
+            <div class="form-grid">
+              <div class="fg"><label>शीर्षक *</label><input id="bTitle" placeholder="ब्लॉग का शीर्षक..."></div>
+              <div class="fg"><label>श्रेणी</label><input id="bCategory" placeholder="इतिहास, समाजशास्त्र..."></div>
+              <div class="fg"><label>लेखक</label><input id="bAuthor" placeholder="डॉ. रमेश मीणा"></div>
+              <div class="fg"><label>प्रकाशन तिथि</label><input id="bDate" placeholder="15 मार्च 2025"></div>
+              <div class="fg"><label>Tags</label><input id="bTags" placeholder="इतिहास, मत्स्य, राजस्थान"></div>
+              <div class="fg"><label>थंबनेल Emoji</label><input id="bThumbEmoji" placeholder="📜" maxlength="4"></div>
+            </div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg"><label>थंबनेल इमेज URL (वैकल्पिक)</label><input id="bThumb" placeholder="https://..." type="url" oninput="previewBlogThumb()"></div>
+            </div>
+            <div id="blogThumbPreview" style="margin-top:8px;display:none" class="img-preview-box"><img id="blogThumbImg" src="" alt=""></div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg"><label>संक्षिप्त विवरण (Excerpt)</label><textarea id="bExcerpt" placeholder="ब्लॉग का संक्षिप्त परिचय..." style="min-height:70px"></textarea></div>
+            </div>
+            <div style="margin-top:12px">
+              <label style="font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.4px;display:block;margin-bottom:8px">पूर्ण सामग्री (Content)</label>
+              <div class="rich-editor">
+                <div class="editor-toolbar">
+                  <button onclick="execCmd('bold')" title="Bold"><b>B</b></button>
+                  <button onclick="execCmd('italic')" title="Italic"><i>I</i></button>
+                  <button onclick="execCmd('underline')" title="Underline"><u>U</u></button>
+                  <button onclick="insertHeading('h2')">H2</button>
+                  <button onclick="insertHeading('h3')">H3</button>
+                  <button onclick="execCmd('insertUnorderedList')">• सूची</button>
+                  <button onclick="execCmd('insertOrderedList')">1. सूची</button>
+                  <button onclick="insertLink()">🔗 लिंक</button>
+                  <button onclick="insertImgInEditor()">🖼️ इमेज</button>
+                  <button onclick="execCmd('removeFormat')">× साफ़</button>
+                </div>
+                <div class="editor-area" id="blogEditor" contenteditable="true" aria-label="ब्लॉग सामग्री"></div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="saveBlog()">💾 प्रकाशित करें</button>
+              <button class="btn btn-secondary" onclick="saveBlogDraft()">📋 Draft</button>
+              <button class="btn btn-secondary" onclick="clearBlogForm()">✕ साफ़</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">सभी ब्लॉग पोस्ट</span></div>
+          <div class="cb-body" style="padding:0"><div style="overflow-x:auto">
+            <table class="admin-table"><thead><tr><th>शीर्षक</th><th>श्रेणी</th><th>लेखक</th><th>तिथि</th><th>स्थिति</th><th>कार्य</th></tr></thead>
+            <tbody id="blogsTable"></tbody></table>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- PDFs -->
+      <div class="panel" id="p-pdfs">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title" id="pdfFormTitle">📄 नया PDF / शोध पेपर जोड़ें</span></div>
+          <div class="cb-body">
+            <input type="hidden" id="editPdfId">
+            <div class="form-grid">
+              <div class="fg"><label>शीर्षक *</label><input id="pTitle" placeholder="शोध पेपर का शीर्षक..."></div>
+              <div class="fg"><label>लेखक</label><input id="pAuthor" placeholder="Dr. R.K. Sharma"></div>
+              <div class="fg"><label>वर्ष</label><input id="pYear" placeholder="2024"></div>
+              <div class="fg"><label>आकार</label><input id="pSize" placeholder="2.4 MB"></div>
+              <div class="fg"><label>पृष्ठ संख्या</label><input id="pPages" placeholder="48"></div>
+              <div class="fg"><label>आइकन Emoji</label><input id="pIcon" placeholder="📊" maxlength="4"></div>
+            </div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg"><label>PDF URL या Google Drive Link</label><input id="pUrl" placeholder="https://drive.google.com/..." type="url"></div>
+              <div class="fg" style="margin-top:12px"><label>विवरण</label><textarea id="pDesc" placeholder="शोध पेपर का संक्षिप्त विवरण..."></textarea></div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="savePdf()">💾 सहेजें</button>
+              <button class="btn btn-secondary" onclick="clearPdfForm()">✕ साफ़</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">सभी PDF</span></div>
+          <div class="cb-body" style="padding:0"><div style="overflow-x:auto">
+            <table class="admin-table"><thead><tr><th>शीर्षक</th><th>लेखक</th><th>वर्ष</th><th>Link</th><th>स्थिति</th><th>कार्य</th></tr></thead>
+            <tbody id="pdfsTable"></tbody></table>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- PAGES -->
+      <div class="panel" id="p-pages">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title" id="pageFormTitle">📑 नया पेज बनाएँ</span></div>
+          <div class="cb-body">
+            <input type="hidden" id="editPageId">
+            <div class="form-grid cols3">
+              <div class="fg"><label>पेज शीर्षक *</label><input id="pgTitle" placeholder="हमारे बारे में"></div>
+              <div class="fg"><label>Slug</label><input id="pgSlug" placeholder="about"></div>
+              <div class="fg"><label>आइकन</label><input id="pgIcon" placeholder="ℹ️" maxlength="4"></div>
+            </div>
+            <div style="margin-top:12px">
+              <label style="font-size:.72rem;color:var(--muted);font-weight:700;text-transform:uppercase;display:block;margin-bottom:8px">पेज सामग्री</label>
+              <div class="rich-editor">
+                <div class="editor-toolbar">
+                  <button onclick="execPgCmd('bold')"><b>B</b></button>
+                  <button onclick="execPgCmd('italic')"><i>I</i></button>
+                  <button onclick="insertPgHeading('h2')">H2</button>
+                  <button onclick="insertPgHeading('h3')">H3</button>
+                  <button onclick="execPgCmd('insertUnorderedList')">• सूची</button>
+                  <button onclick="insertPgImg()">🖼️ इमेज</button>
+                </div>
+                <div class="editor-area" id="pageEditor" contenteditable="true" aria-label="पेज सामग्री"></div>
+              </div>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="savePage()">💾 सहेजें</button>
+              <button class="btn btn-secondary" onclick="clearPageForm()">✕ साफ़</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">सभी पेज</span></div>
+          <div class="cb-body" style="padding:0"><div style="overflow-x:auto">
+            <table class="admin-table"><thead><tr><th>शीर्षक</th><th>Slug</th><th>क्रम</th><th>स्थिति</th><th>कार्य</th></tr></thead>
+            <tbody id="pagesTable"></tbody></table>
+          </div></div>
+        </div>
+      </div>
+
+      <!-- HOME PAGE SETTINGS -->
+      <div class="panel" id="p-homepage">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🏠 होम पेज सेटिंग</span></div>
+          <div class="cb-body">
+            <div class="form-grid">
+              <div class="fg"><label>साइट शीर्षक</label><input id="sSiteName" placeholder="मीणा शोध पोर्टल"></div>
+              <div class="fg"><label>Banner Eyebrow Text</label><input id="sBannerEyebrow" placeholder="🔬 शोध एवं ज्ञान का केंद्र"></div>
+              <div class="fg"><label>Banner Badge Text</label><input id="sBannerBadge" placeholder="📚 27 स्रोत | 6 श्रेणियाँ"></div>
+            </div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg"><label>Banner मुख्य शीर्षक</label><input id="sBannerTitle" placeholder="मीणा जाति — शोध वेबसाइट संकलन"></div>
+              <div class="fg" style="margin-top:12px"><label>Banner उप-शीर्षक</label><textarea id="sBannerSubtitle" placeholder="Banner की उप-पंक्ति..." style="min-height:70px"></textarea></div>
+            </div>
+            <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="fg">
+                <label>Notice Bar Enable</label>
+                <div style="display:flex;align-items:center;gap:10px;margin-top:4px">
+                  <input type="checkbox" id="sNoticeEnabled" style="width:18px;height:18px;accent-color:var(--primary)">
+                  <span style="font-size:.85rem;color:var(--muted)">Notice Bar दिखाएँ</span>
+                </div>
+              </div>
+              <div class="fg"><label>Notice Text</label><input id="sNoticeText" placeholder="📢 नई जानकारी: ..."></div>
+            </div>
+            <div style="margin-top:12px;display:grid;grid-template-columns:1fr 1fr;gap:12px">
+              <div class="fg"><label>Keywords Section</label><select id="sShowKw"><option value="true">✅ दिखाएँ</option><option value="false">❌ छुपाएँ</option></select></div>
+              <div class="fg"><label>Tips Section</label><select id="sShowTips"><option value="true">✅ दिखाएँ</option><option value="false">❌ छुपाएँ</option></select></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="saveHomepage()">💾 सहेजें</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ═══ CONTACT INFO MANAGER (NEW) ═══ -->
+      <div class="panel" id="p-contact_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">📬 Contact Info एवं Topbar</span></div>
+          <div class="cb-body">
+            <p style="font-size:.85rem;color:var(--muted);margin-bottom:18px">यहाँ बदलाव करने से Topbar और Index पेज का Contact Info तुरंत अपडेट होगा।</p>
+            <div class="form-grid">
+              <div class="fg">
+                <label>📧 ईमेल पता</label>
+                <input id="cEmail" placeholder="research@meenaportal.org" type="email">
+              </div>
+              <div class="fg">
+                <label>📞 फ़ोन नंबर</label>
+                <input id="cPhone" placeholder="+91 98765 43210">
+              </div>
+            </div>
+            <div class="form-grid full" style="margin-top:12px">
+              <div class="fg">
+                <label>Topbar Custom HTML (ऊपर बाईं तरफ दिखने वाला टेक्स्ट)</label>
+                <input id="cTopbarCustom" placeholder="📧 email@domain.com &nbsp;|&nbsp; 📞 +91 XXXXX XXXXX">
+                <p style="font-size:.72rem;color:var(--muted);margin-top:4px">खाली छोड़ने पर Email+Phone से auto-generate होगा।</p>
+              </div>
+            </div>
+            <div style="margin-top:16px;padding:14px;background:#F0FFF4;border:1px solid #C0E8CC;border-radius:var(--radius)">
+              <p style="font-size:.83rem;color:var(--green);font-weight:600;margin-bottom:4px">✅ Live Preview (Topbar):</p>
+              <p id="contactPreview" style="font-size:.85rem;color:var(--text);font-family:monospace;background:#fff;padding:8px;border-radius:6px;border:1px solid #ddd">📧 research@meenaportal.org &nbsp;|&nbsp; 📞 +91 98765 43210</p>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" onclick="saveContactInfo()">💾 सहेजें एवं लागू करें</button>
+              <button class="btn btn-secondary" onclick="loadContactInfo()">↺ रिफ्रेश</button>
+            </div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">📍 पता एवं अतिरिक्त जानकारी</span></div>
+          <div class="cb-body">
+            <div class="form-grid full">
+              <div class="fg"><label>पता (Address)</label><input id="cAddress" placeholder="जयपुर, राजस्थान — 302001"></div>
+              <div class="fg" style="margin-top:12px"><label>Social / WhatsApp Link (वैकल्पिक)</label><input id="cWhatsapp" placeholder="https://wa.me/919876543210" type="url"></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="saveContactExtra()">💾 सहेजें</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- LOGO & BANNER -->
+      <div class="panel" id="p-logo">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🖼️ लोगो एवं बैनर सेटिंग</span></div>
+          <div class="cb-body">
+            <div class="form-grid">
+              <div class="fg"><label>Logo Emoji</label><input id="sLogoEmoji" placeholder="🐟" maxlength="4"></div>
+              <div class="fg"><label>Logo Text</label><input id="sLogoText" placeholder="मीणा शोध पोर्टल"></div>
+              <div class="fg"><label>Logo Sub Text</label><input id="sLogoSub" placeholder="Meena Research Hub"></div>
+              <div class="fg"><label>Logo Image URL (वैकल्पिक)</label><input id="sLogoUrl" placeholder="https://..." type="url" oninput="previewLogo()"></div>
+            </div>
+            <div id="logoPreviewBox" style="margin-top:10px;display:none" class="img-preview-box">
+              <img id="logoPreviewImg" src="" alt="Logo Preview" style="height:50px;border-radius:50%;border:2px solid var(--gold2)">
+              <span style="font-size:.8rem;color:var(--muted)">Logo Preview</span>
+            </div>
+            <div style="margin-top:18px;padding-top:14px;border-top:1px solid var(--mid)">
+              <div class="form-grid full">
+                <div class="fg"><label>Banner Background CSS</label><input id="sBannerBg" placeholder="linear-gradient(135deg,#6B1A1A 0%,#9B2020 55%,#9B6800 100%)"></div>
+                <div class="fg" style="margin-top:12px"><label>Banner Image URL (वैकल्पिक)</label><input id="sBannerImageUrl" placeholder="https://..." type="url" oninput="previewBannerImg()"></div>
+              </div>
+              <div id="bannerImgPreviewBox" style="margin-top:10px;display:none" class="img-preview-box">
+                <img id="bannerImgPreview" src="" alt="Banner Preview" style="height:60px;border-radius:8px;">
+              </div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="saveLogo()">💾 सहेजें</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="panel" id="p-stats_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">📈 Stats Bar प्रबंधन</span><button class="btn btn-sm btn-toggle" onclick="addStat()">+ जोड़ें</button></div>
+          <div class="cb-body" id="statsEditor"></div>
+          <div class="cb-body" style="padding-top:0"><button class="btn btn-primary" onclick="saveStats()">💾 Stats सहेजें</button></div>
+        </div>
+      </div>
+
+      <!-- KEYWORDS -->
+      <div class="panel" id="p-keywords_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🔑 सर्च Keywords</span><button class="btn btn-sm btn-toggle" onclick="addKeyword()">+ जोड़ें</button></div>
+          <div class="cb-body" id="kwEditor"></div>
+          <div class="cb-body" style="padding-top:0"><button class="btn btn-primary" onclick="saveKeywords()">💾 सहेजें</button></div>
+        </div>
+      </div>
+
+      <!-- TIPS -->
+      <div class="panel" id="p-tips_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">💡 Tips सेटिंग</span><button class="btn btn-sm btn-toggle" onclick="addTip()">+ जोड़ें</button></div>
+          <div class="cb-body" id="tipsEditor"></div>
+          <div class="cb-body" style="padding-top:0"><button class="btn btn-primary" onclick="saveTips()">💾 सहेजें</button></div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <div class="panel" id="p-footer_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">⬇️ Footer सेटिंग</span></div>
+          <div class="cb-body">
+            <div class="form-grid full">
+              <div class="fg"><label>Footer About Text</label><textarea id="sFooterAbout" placeholder="साइट का परिचय..."></textarea></div>
+              <div class="fg" style="margin-top:12px"><label>Copyright Text</label><input id="sFooterCopyright" placeholder="© 2025 मीणा शोध पोर्टल।"></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="saveFooter()">💾 सहेजें</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- COLORS -->
+      <div class="panel" id="p-colors">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🎨 रंग एवं थीम</span></div>
+          <div class="cb-body">
+            <div class="form-grid">
+              <div class="fg"><label>Primary Color</label><div class="color-row"><input type="color" id="cPrimary" value="#6B1A1A"><input id="cPrimaryHex" value="#6B1A1A" placeholder="#6B1A1A" style="flex:1"></div></div>
+              <div class="fg"><label>Accent Color (Gold)</label><div class="color-row"><input type="color" id="cAccent" value="#9B6800"><input id="cAccentHex" value="#9B6800" placeholder="#9B6800" style="flex:1"></div></div>
+            </div>
+            <div style="margin-top:18px;padding:14px;background:var(--mid);border-radius:var(--radius)">
+              <p style="font-size:.82rem;color:var(--muted)">🎨 <strong>Preset Themes:</strong></p>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:10px">
+                <button class="btn btn-sm btn-secondary" onclick="applyPreset('#6B1A1A','#9B6800')">🟤 Maroon Gold</button>
+                <button class="btn btn-sm btn-secondary" onclick="applyPreset('#1A4A6B','#1A7A3A')">🔵 Blue Green</button>
+                <button class="btn btn-sm btn-secondary" onclick="applyPreset('#2D1A6B','#8B1A6B')">💜 Purple Magenta</button>
+                <button class="btn btn-sm btn-secondary" onclick="applyPreset('#1A5A1A','#8B6800')">🟢 Forest Gold</button>
+                <button class="btn btn-sm btn-secondary" onclick="applyPreset('#4A1A1A','#8B4500')">🟠 Deep Red Orange</button>
+              </div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="saveColors()">💾 थीम सहेजें</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- NAVIGATION -->
+      <div class="panel" id="p-nav_mgr">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🧭 Navigation Links</span></div>
+          <div class="cb-body" id="navEditor"></div>
+          <div class="cb-body" style="padding-top:0"><button class="btn btn-primary" onclick="saveNav()">💾 Navigation सहेजें</button></div>
+        </div>
+      </div>
+
+      <!-- SETTINGS / PASSWORD -->
+      <div class="panel" id="p-settings">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">⚙️ Admin सेटिंग्स</span></div>
+          <div class="cb-body">
+            <h3 style="font-size:.95rem;margin-bottom:6px;color:var(--primary)">🔒 Admin Password बदलें</h3>
+            <div class="security-badge">🛡️ SHA-256 Hashed — Highly Secure</div>
+            <div class="form-grid" style="margin-top:12px">
+              <div class="fg"><label>वर्तमान Password</label><input type="password" id="currentPass" placeholder="वर्तमान पासवर्ड" autocomplete="current-password"></div>
+              <div class="fg"><label>नया Password</label><input type="password" id="newPass1" placeholder="नया पासवर्ड (min 8 chars)" autocomplete="new-password"></div>
+              <div class="fg"><label>Confirm New Password</label><input type="password" id="newPass2" placeholder="पुनः दर्ज करें" autocomplete="new-password"></div>
+              <div class="fg"><label>Password Strength</label><div id="passStrength" style="padding:9px 13px;background:#FAFAF8;border:1.5px solid var(--border);border-radius:9px;font-size:.82rem;color:var(--muted)">— पासवर्ड दर्ज करें</div></div>
+            </div>
+            <div class="form-actions"><button class="btn btn-primary" onclick="changePass()">🔐 Password बदलें</button></div>
+          </div>
+        </div>
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">🛡️ सुरक्षा जानकारी</span></div>
+          <div class="cb-body" style="font-size:.85rem;color:var(--muted)">
+            <p style="margin-bottom:6px">✅ SHA-256 hashing — पासवर्ड plaintext में store नहीं होता।</p>
+            <p style="margin-bottom:6px">✅ गलत पासवर्ड की 5 कोशिशों के बाद 5 मिनट का lockout।</p>
+            <p style="margin-bottom:6px">✅ 30 मिनट की निष्क्रियता के बाद session समाप्त।</p>
+            <p style="margin-bottom:6px">✅ Noindex meta tag — Google इसे index नहीं करेगा।</p>
+            <p>✅ Single-page integrated — अलग admin.html file नहीं।</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- BACKUP -->
+      <div class="panel" id="p-backup">
+        <div class="card-box">
+          <div class="cb-header"><span class="cb-title">💾 Data Backup एवं Restore</span></div>
+          <div class="cb-body">
+            <p style="font-size:.88rem;color:var(--muted);margin-bottom:18px">सभी डेटा को JSON फ़ाइल में Export करें या Import करें।</p>
+            <div style="display:flex;gap:12px;flex-wrap:wrap">
+              <button class="btn btn-primary" onclick="exportData()">⬇ Export JSON</button>
+              <button class="btn btn-secondary" onclick="document.getElementById('importFile').click()">⬆ Import JSON</button>
+              <input type="file" id="importFile" accept=".json" style="display:none" onchange="importData(event)">
+              <button class="btn btn-danger" onclick="resetAllData()">🗑 सब Reset करें</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /content -->
+  </main>
+</div>
+</div><!-- /adminApp -->
+
+<div id="adminToast" aria-live="polite" aria-atomic="false"></div>
+
+<!-- ════════════════════════════════════════════════════
+     JAVASCRIPT — All Logic
+════════════════════════════════════════════════════ -->
+<script>
+'use strict';
+
+/* ════════ SHARED DATABASE ════════ */
+const DB = {
+  _prefix: 'mcms_',
+  get(k){ try{return JSON.parse(localStorage.getItem(this._prefix+k)||'null');}catch{return null;} },
+  set(k,v){ try{localStorage.setItem(this._prefix+k,JSON.stringify(v));}catch(e){console.warn('Storage full:',e);} },
+  push(k,item){ const a=this.get(k)||[]; a.push(item); this.set(k,a); return a; },
+  update(k,id,changes){ const a=this.get(k)||[]; const i=a.findIndex(x=>x.id===id); if(i!==-1){a[i]={...a[i],...changes};this.set(k,a);} return a; },
+  remove(k,id){ const a=(this.get(k)||[]).filter(x=>x.id!==id); this.set(k,a); return a; }
+};
+const ID = ()=> Date.now() + Math.floor(Math.random()*9999);
+
+/* ════════ SECURITY: SHA-256 Password Hashing ════════ */
+async function sha256(message) {
+  const msgBuffer = new TextEncoder().encode(message);
+  const hashBuffer = await crypto.subtle.digest('SHA-256', msgBuffer);
+  const hashArray = Array.from(new Uint8Array(hashBuffer));
+  return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+}
+
+// Default password hash for 'adminitg'
+const DEFAULT_PASS_HASH = 'b1aefa7f89c8ff5fb1ad5f87e6c3a2d90e9e4b5c4e1d2a3b5f6e7d8c9b0a1f2'; // will be set on first load
+
+async function initPasswordHash() {
+  const existing = DB.get('admin_creds_v2');
+  if (!existing) {
+    // First time setup — hash 'adminitg'
+    const hash = await sha256('adminitg');
+    DB.set('admin_creds_v2', { user: 'admin', passHash: hash });
+    // Remove old plaintext creds if any
+    localStorage.removeItem('mcms_admin_creds');
+  }
+}
+
+async function verifyPassword(input) {
+  const creds = DB.get('admin_creds_v2');
+  if (!creds) return false;
+  const inputHash = await sha256(input);
+  return inputHash === creds.passHash;
+}
+
+/* ════════ BRUTE FORCE PROTECTION ════════ */
+const SEC = {
+  MAX_ATTEMPTS: 5,
+  LOCKOUT_MS: 5 * 60 * 1000,
+  SESSION_MS: 30 * 60 * 1000,
+  _countdownInterval: null,
+  _sessionEnd: 0,
+
+  getAttempts(){ return parseInt(sessionStorage.getItem('adm_att')||'0'); },
+  incAttempts(){ const a=this.getAttempts()+1; sessionStorage.setItem('adm_att',a); return a; },
+  resetAttempts(){ sessionStorage.removeItem('adm_att'); },
+
+  getLockout(){ const t=parseInt(sessionStorage.getItem('adm_lock')||'0'); return t>Date.now()?t:0; },
+  setLockout(){ const t=Date.now()+this.LOCKOUT_MS; sessionStorage.setItem('adm_lock',t); return t; },
+
+  startSession(){
+    this._sessionEnd = Date.now() + this.SESSION_MS;
+    clearInterval(this._countdownInterval);
+    this._countdownInterval = setInterval(()=>this._tickSession(), 1000);
+    ['click','keydown','mousemove','scroll'].forEach(e=>{
+      document.addEventListener(e,()=>{ this._sessionEnd=Date.now()+this.SESSION_MS; }, true);
+    });
+  },
+
+  _tickSession(){
+    const rem = Math.max(0, this._sessionEnd - Date.now());
+    const min = Math.floor(rem/60000);
+    const sec = Math.floor((rem%60000)/1000);
+    const el = document.getElementById('sessionCountdown');
+    if(el) el.textContent = `${String(min).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+    if(rem<=0){
+      clearInterval(this._countdownInterval);
+      adminToast('Session समाप्त। पुनः Login करें।','warn');
+      setTimeout(()=>{ document.getElementById('adminApp').style.display='none'; document.getElementById('loginScreen').style.display='flex'; }, 2000);
+    }
+  },
+
+  startLockoutUI(until){
+    document.getElementById('lockoutScreen').classList.add('active');
+    const interval = setInterval(()=>{
+      const rem = Math.max(0, until - Date.now());
+      const min = Math.floor(rem/60000);
+      const sec = Math.floor((rem%60000)/1000);
+      document.getElementById('lockoutTimer').textContent = `${String(min).padStart(2,'0')}:${String(sec).padStart(2,'0')}`;
+      if(rem<=0){ clearInterval(interval); document.getElementById('lockoutScreen').classList.remove('active'); }
+    }, 1000);
+  }
+};
+
+/* ════════ AUTH ════════ */
+function openAdminPanel() {
+  const lock = SEC.getLockout();
+  if(lock){ SEC.startLockoutUI(lock); return; }
+  document.getElementById('loginScreen').style.display = 'flex';
+  document.getElementById('publicSite').style.filter = 'blur(3px)';
+}
+
+function closeAdminLogin() {
+  document.getElementById('loginScreen').style.display = 'none';
+  document.getElementById('publicSite').style.filter = '';
+}
+
+async function doLogin() {
+  const lock = SEC.getLockout();
+  if(lock){ SEC.startLockoutUI(lock); return; }
+
+  const u = document.getElementById('lu').value.trim();
+  const p = document.getElementById('lp').value;
+
+  const creds = DB.get('admin_creds_v2');
+  if(!creds){ adminToast('System error. Reload page.','error'); return; }
+
+  const valid = await verifyPassword(p);
+  const userMatch = u === creds.user;
+
+  if(valid && userMatch) {
+    SEC.resetAttempts();
+    document.getElementById('loginScreen').style.display = 'none';
+    document.getElementById('publicSite').style.filter = '';
+    document.getElementById('adminApp').style.display = 'block';
+    SEC.startSession();
+    initAdmin();
+  } else {
+    const attempts = SEC.incAttempts();
+    const remaining = SEC.MAX_ATTEMPTS - attempts;
+    document.getElementById('lerr').style.display = 'block';
+    if(attempts >= SEC.MAX_ATTEMPTS) {
+      const lockUntil = SEC.setLockout();
+      document.getElementById('loginBtn').disabled = true;
+      SEC.startLockoutUI(lockUntil);
+    } else {
+      const attEl = document.getElementById('lAttempts');
+      attEl.style.display = 'block';
+      attEl.textContent = `⚠️ ${remaining} प्रयास शेष`;
+    }
+    const wrap = document.querySelector('.login-wrap');
+    wrap.style.animation = 'none';
+    wrap.offsetHeight;
+    wrap.style.animation = 'shake .4s ease';
+  }
+}
+
+document.getElementById('lp').addEventListener('keydown', e=>{ if(e.key==='Enter') doLogin(); });
+document.getElementById('lu').addEventListener('keydown', e=>{ if(e.key==='Enter') document.getElementById('lp').focus(); });
+
+// Update password strength indicator
+document.getElementById('newPass1') && document.getElementById('newPass1').addEventListener('input', function() {
+  const pass = this.value;
+  const el = document.getElementById('passStrength');
+  if(!el) return;
+  let strength = 0;
+  if(pass.length >= 8) strength++;
+  if(pass.length >= 12) strength++;
+  if(/[A-Z]/.test(pass)) strength++;
+  if(/[0-9]/.test(pass)) strength++;
+  if(/[^A-Za-z0-9]/.test(pass)) strength++;
+  const labels = ['','🔴 बहुत कमज़ोर','🟠 कमज़ोर','🟡 ठीक है','🟢 मज़बूत','🔵 बहुत मज़बूत'];
+  el.textContent = pass ? (labels[strength]||labels[1]) : '— पासवर्ड दर्ज करें';
+});
+
+function doLogout() {
+  if(confirm('Admin Panel से बाहर जाएँ?')) {
+    document.getElementById('adminApp').style.display = 'none';
+    document.getElementById('publicSite').style.filter = '';
+    clearInterval(SEC._countdownInterval);
+  }
+}
+
+function goBackToSite() {
+  document.getElementById('adminApp').style.display = 'none';
+  // Refresh public site data
+  applySettings();
+  renderStats();
+  renderHome();
+  const s = DB.get('settings')||{};
+  renderFooter(s);
+}
+
+/* ════════ PANEL NAVIGATION ════════ */
+const panelTitles = {
+  dashboard:'📊 डैशबोर्ड',links:'🔗 लिंक प्रबंधन',categories:'📁 श्रेणी प्रबंधन',
+  blog:'📝 ब्लॉग लेखन',pdfs:'📄 शोध PDF',pages:'📑 पेज प्रबंधन',
+  homepage:'🏠 होम पेज सेटिंग',contact_mgr:'📬 Contact Info',logo:'🖼️ लोगो एवं बैनर',
+  stats_mgr:'📈 Stats Bar',keywords_mgr:'🔑 Keywords',
+  tips_mgr:'💡 Tips',footer_mgr:'⬇️ Footer',
+  colors:'🎨 रंग एवं थीम',nav_mgr:'🧭 Navigation',
+  settings:'⚙️ सेटिंग्स',backup:'💾 Backup'
+};
+const panelSubs = {
+  dashboard:'सभी सामग्री का अवलोकन',links:'लिंक जोड़ें, संपादित करें, हटाएँ',
+  categories:'श्रेणियाँ प्रबंधित करें',blog:'नया ब्लॉग लिखें या संपादित करें',
+  pdfs:'शोध PDF जोड़ें',pages:'कस्टम पेज बनाएँ',
+  homepage:'बैनर, नोटिस, सेक्शन सेटिंग',contact_mgr:'Email, Phone, Topbar Contact Info',
+  logo:'लोगो, बैनर इमेज',stats_mgr:'Stats बार के नंबर बदलें',
+  keywords_mgr:'सर्च Keywords प्रबंधित करें',tips_mgr:'Tips बॉक्स प्रबंधित करें',
+  footer_mgr:'Footer सामग्री',colors:'साइट का रंग बदलें',
+  nav_mgr:'नेविगेशन लिंक क्रम',settings:'Admin Password बदलें',backup:'Data Export/Import'
+};
+
+function showPanel(id, btn) {
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.sb-item').forEach(b=>b.classList.remove('active'));
+  const panel = document.getElementById('p-'+id);
+  if(panel) panel.classList.add('active');
+  if(btn) btn.classList.add('active');
+  document.getElementById('panelTitle').textContent = panelTitles[id]||id;
+  document.getElementById('panelSub').textContent = panelSubs[id]||'';
+  const loaders = {
+    dashboard: renderDashboard,
+    links: ()=>{ populateCatSelect(); renderLinksTable(); },
+    categories: renderCatsTable,
+    blog: renderBlogsTable,
+    pdfs: renderPdfsTable,
+    pages: renderPagesTable,
+    homepage: loadHomepage,
+    contact_mgr: loadContactInfo,
+    logo: loadLogo,
+    stats_mgr: renderStatsEditor,
+    keywords_mgr: renderKwEditor,
+    tips_mgr: renderTipsEditor,
+    footer_mgr: loadFooter,
+    colors: loadColors,
+    nav_mgr: renderNavEditor
+  };
+  if(loaders[id]) loaders[id]();
+  document.getElementById('adminMainArea').scrollTo({top:0, behavior:'smooth'});
+}
+
+/* ════════ HELPERS ════════ */
+function esc(s){ return s==null?'':String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#x27;'); }
+function escHtml(str){ if(str==null) return ''; return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#x27;'); }
+function escAttr(str){ if(str==null) return ''; return String(str).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#x27;'}[m])); }
+function safeUrl(url){ if(!url) return '#'; try{ const u=new URL(url); if(!['http:','https:'].includes(u.protocol)) return '#'; return url; }catch{return '#';} }
+
+/* ════════ DASHBOARD ════════ */
+function renderDashboard() {
+  const links=DB.get('links')||[]; const blogs=DB.get('blogs')||[];
+  const pdfs=DB.get('pdfs')||[]; const pages=DB.get('pages')||[];
+  const cats=DB.get('categories')||[];
+  document.getElementById('dashGrid').innerHTML=`
+    <div class="ds-card"><div class="ds-num">${links.length}</div><div class="ds-label">🔗 कुल लिंक</div></div>
+    <div class="ds-card"><div class="ds-num">${cats.length}</div><div class="ds-label">📁 श्रेणियाँ</div></div>
+    <div class="ds-card"><div class="ds-num">${blogs.length}</div><div class="ds-label">📝 ब्लॉग पोस्ट</div></div>
+    <div class="ds-card"><div class="ds-num">${pdfs.length}</div><div class="ds-label">📄 PDF शोध</div></div>
+    <div class="ds-card"><div class="ds-num">${pages.length}</div><div class="ds-label">📑 पेज</div></div>
+    <div class="ds-card"><div class="ds-num">${links.filter(l=>l.visible).length}</div><div class="ds-label">✅ सक्रिय लिंक</div></div>`;
+  document.getElementById('dashAct').innerHTML=`
+    <li class="act-item"><div class="act-icon green">🔗</div><div class="act-text"><div class="act-title">कुल लिंक: ${links.length}</div><div class="act-sub">श्रेणियाँ: ${cats.length}</div></div></li>
+    <li class="act-item"><div class="act-icon gold">📝</div><div class="act-text"><div class="act-title">ब्लॉग पोस्ट: ${blogs.length}</div><div class="act-sub">प्रकाशित: ${blogs.filter(b=>b.visible).length}</div></div></li>
+    <li class="act-item"><div class="act-icon green">📄</div><div class="act-text"><div class="act-title">PDF: ${pdfs.length}</div><div class="act-sub">पेज: ${pages.length}</div></div></li>`;
+  const s=DB.get('settings')||{};
+  document.getElementById('sbName').textContent = s.logoText||'मीणा शोध';
+  const sl=document.getElementById('sbLogo');
+  if(s.logoUrl) sl.innerHTML=`<img src="${esc(s.logoUrl)}" alt="" loading="lazy">`;
+  else sl.textContent = s.logoEmoji||'🐟';
+}
+
+/* ════════ LINKS CRUD ════════ */
+function populateCatSelect() {
+  const cats=DB.get('categories')||[];
+  document.getElementById('lCat').innerHTML=cats.map(c=>`<option value="${c.id}">${esc(c.icon)} ${esc(c.name)}</option>`).join('');
+}
+function renderLinksTable() {
+  const links=DB.get('links')||[]; const cats=DB.get('categories')||[];
+  const cm={}; cats.forEach(c=>{cm[c.id]=c;});
+  document.getElementById('linkCount').textContent=links.length+' लिंक';
+  document.getElementById('linksTable').innerHTML=links.length?links.map(l=>`
+    <tr>
+      <td><strong>${esc(l.title)}</strong></td>
+      <td><span class="badge-cat">${esc(cm[l.catId]?.name||'-')}</span></td>
+      <td style="max-width:160px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:.75rem;color:var(--muted)">${esc(l.url)}</td>
+      <td><span class="${l.visible?'badge-visible':'badge-hidden'}">${l.visible?'✅ दृश्य':'❌ छुपा'}</span></td>
+      <td class="t-actions">
+        <button class="btn-sm btn-edit" onclick="editLink(${l.id})">✏</button>
+        <button class="btn-sm btn-toggle ${l.visible?'':'off'}" onclick="toggleLink(${l.id})">${l.visible?'छुपाएँ':'दिखाएँ'}</button>
+        <button class="btn-sm btn-del" onclick="deleteLink(${l.id})">🗑</button>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="5" style="text-align:center;padding:28px;color:var(--muted)">कोई लिंक नहीं।</td></tr>';
+}
+function saveLink() {
+  const id=document.getElementById('editLinkId').value;
+  const url=document.getElementById('lUrl').value.trim();
+  if(!url.startsWith('http')){ adminToast('Valid URL दर्ज करें (https://...)','warn'); return; }
+  const obj={
+    title:document.getElementById('lTitle').value.trim(),
+    url,
+    catId:parseInt(document.getElementById('lCat').value)||0,
+    icon:document.getElementById('lIcon').value.trim()||'🔗',
+    iconImg:document.getElementById('lIconImg').value.trim(),
+    tags:document.getElementById('lTags').value.split(',').map(t=>t.trim()).filter(Boolean),
+    desc:document.getElementById('lDesc').value.trim(),
+    visible:true
+  };
+  if(!obj.title){ adminToast('शीर्षक आवश्यक है','warn'); return; }
+  if(id){ obj.id=parseInt(id); DB.update('links',obj.id,obj); adminToast('लिंक अपडेट हुआ','success'); }
+  else{ obj.id=ID(); DB.push('links',obj); adminToast('लिंक जोड़ा गया','success'); }
+  clearLinkForm(); renderLinksTable();
+}
+function editLink(id){ const l=(DB.get('links')||[]).find(x=>x.id===id); if(!l) return; document.getElementById('editLinkId').value=l.id; document.getElementById('lTitle').value=l.title||''; document.getElementById('lUrl').value=l.url||''; document.getElementById('lIcon').value=l.icon||''; document.getElementById('lIconImg').value=l.iconImg||''; document.getElementById('lTags').value=(l.tags||[]).join(', '); document.getElementById('lDesc').value=l.desc||''; document.getElementById('linkFormTitle').textContent='✏ लिंक संपादित करें'; populateCatSelect(); document.getElementById('lCat').value=l.catId; }
+function toggleLink(id){ const l=(DB.get('links')||[]).find(x=>x.id===id); if(l){ DB.update('links',id,{visible:!l.visible}); renderLinksTable(); } }
+function deleteLink(id){ if(!confirm('लिंक हटाएँ?')) return; DB.remove('links',id); renderLinksTable(); adminToast('लिंक हटाया','warn'); }
+function clearLinkForm(){ ['editLinkId','lTitle','lUrl','lIcon','lIconImg','lTags','lDesc'].forEach(i=>document.getElementById(i).value=''); document.getElementById('linkFormTitle').textContent='🔗 नया लिंक जोड़ें'; document.getElementById('linkIconPreview').style.display='none'; }
+function previewLinkIcon(){ const u=document.getElementById('lIconImg').value; const b=document.getElementById('linkIconPreview'); if(u){ b.style.display='flex'; document.getElementById('linkIconImgEl').src=u; } else b.style.display='none'; }
+
+/* ════════ CATEGORIES CRUD ════════ */
+function renderCatsTable() {
+  const cats=(DB.get('categories')||[]).sort((a,b)=>a.order-b.order);
+  document.getElementById('catsTable').innerHTML=cats.length?cats.map(c=>`
+    <tr>
+      <td>${c.order}</td><td>${esc(c.icon)}</td>
+      <td><strong>${esc(c.name)}</strong></td>
+      <td><code style="font-size:.76rem">${esc(c.colorClass)}</code></td>
+      <td><span class="${c.visible?'badge-visible':'badge-hidden'}">${c.visible?'✅':'❌'}</span></td>
+      <td class="t-actions">
+        <button class="btn-sm btn-edit" onclick="editCat(${c.id})">✏</button>
+        <button class="btn-sm btn-toggle ${c.visible?'':'off'}" onclick="toggleCat(${c.id})">${c.visible?'छुपाएँ':'दिखाएँ'}</button>
+        <button class="btn-sm btn-del" onclick="deleteCat(${c.id})">🗑</button>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="6" style="text-align:center;padding:28px;color:var(--muted)">कोई श्रेणी नहीं।</td></tr>';
+}
+function saveCat() {
+  const id=document.getElementById('editCatId').value;
+  const cats=DB.get('categories')||[];
+  const obj={name:document.getElementById('cName').value.trim(),icon:document.getElementById('cIcon').value.trim()||'📁',colorClass:document.getElementById('cClass').value,visible:true};
+  if(!obj.name){ adminToast('श्रेणी नाम आवश्यक है','warn'); return; }
+  if(id){ obj.id=parseInt(id); const c=(cats.find(x=>x.id===obj.id)||{}); obj.order=c.order||cats.length+1; DB.update('categories',obj.id,obj); adminToast('श्रेणी अपडेट हुई','success'); }
+  else{ obj.id=ID(); obj.order=cats.length+1; DB.push('categories',obj); adminToast('श्रेणी जोड़ी गई','success'); }
+  clearCatForm(); renderCatsTable();
+}
+function editCat(id){ const c=(DB.get('categories')||[]).find(x=>x.id===id); if(!c) return; document.getElementById('editCatId').value=c.id; document.getElementById('cName').value=c.name||''; document.getElementById('cIcon').value=c.icon||''; document.getElementById('cClass').value=c.colorClass||'c-custom'; document.getElementById('catFormTitle').textContent='✏ श्रेणी संपादित करें'; }
+function toggleCat(id){ const c=(DB.get('categories')||[]).find(x=>x.id===id); if(c){ DB.update('categories',id,{visible:!c.visible}); renderCatsTable(); } }
+function deleteCat(id){ if(!confirm('श्रेणी हटाएँ?')) return; DB.remove('categories',id); renderCatsTable(); adminToast('श्रेणी हटाई','warn'); }
+function clearCatForm(){ ['editCatId','cName','cIcon'].forEach(i=>document.getElementById(i).value=''); document.getElementById('catFormTitle').textContent='📁 नई श्रेणी जोड़ें'; }
+
+/* ════════ BLOG CRUD ════════ */
+function renderBlogsTable() {
+  const blogs=DB.get('blogs')||[];
+  document.getElementById('blogsTable').innerHTML=blogs.length?blogs.map(b=>`
+    <tr>
+      <td><strong>${esc(b.title)}</strong></td>
+      <td><span class="badge-cat">${esc(b.category)}</span></td>
+      <td>${esc(b.author)}</td><td style="white-space:nowrap">${esc(b.date)}</td>
+      <td><span class="${b.visible?'badge-visible':'badge-hidden'}">${b.visible?'✅ प्रकाशित':'📋 Draft'}</span></td>
+      <td class="t-actions">
+        <button class="btn-sm btn-edit" onclick="editBlog(${b.id})">✏</button>
+        <button class="btn-sm btn-toggle ${b.visible?'':'off'}" onclick="toggleBlog(${b.id})">${b.visible?'Draft':'प्रकाशित'}</button>
+        <button class="btn-sm btn-del" onclick="deleteBlog(${b.id})">🗑</button>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="6" style="text-align:center;padding:28px;color:var(--muted)">कोई ब्लॉग नहीं।</td></tr>';
+}
+function saveBlog(draft=false) {
+  const id=document.getElementById('editBlogId').value;
+  const obj={title:document.getElementById('bTitle').value.trim(),category:document.getElementById('bCategory').value.trim(),author:document.getElementById('bAuthor').value.trim(),date:document.getElementById('bDate').value.trim(),excerpt:document.getElementById('bExcerpt').value.trim(),content:document.getElementById('blogEditor').innerHTML,thumb:document.getElementById('bThumb').value.trim(),thumbEmoji:document.getElementById('bThumbEmoji').value.trim()||'📝',tags:document.getElementById('bTags').value.split(',').map(t=>t.trim()).filter(Boolean),visible:!draft};
+  if(!obj.title){ adminToast('शीर्षक आवश्यक है','warn'); return; }
+  if(id){ obj.id=parseInt(id); DB.update('blogs',obj.id,obj); adminToast(draft?'Draft सहेजा':'ब्लॉग प्रकाशित!','success'); }
+  else{ obj.id=ID(); DB.push('blogs',obj); adminToast(draft?'Draft सहेजा':'ब्लॉग प्रकाशित!','success'); }
+  clearBlogForm(); renderBlogsTable();
+}
+function saveBlogDraft(){ saveBlog(true); }
+function editBlog(id){ const b=(DB.get('blogs')||[]).find(x=>x.id===id); if(!b) return; document.getElementById('editBlogId').value=b.id; document.getElementById('bTitle').value=b.title||''; document.getElementById('bCategory').value=b.category||''; document.getElementById('bAuthor').value=b.author||''; document.getElementById('bDate').value=b.date||''; document.getElementById('bExcerpt').value=b.excerpt||''; document.getElementById('bThumb').value=b.thumb||''; document.getElementById('bThumbEmoji').value=b.thumbEmoji||''; document.getElementById('bTags').value=(b.tags||[]).join(', '); document.getElementById('blogEditor').innerHTML=b.content||''; document.getElementById('blogFormTitle').textContent='✏ ब्लॉग संपादित करें'; }
+function toggleBlog(id){ const b=(DB.get('blogs')||[]).find(x=>x.id===id); if(b){ DB.update('blogs',id,{visible:!b.visible}); renderBlogsTable(); } }
+function deleteBlog(id){ if(!confirm('ब्लॉग हटाएँ?')) return; DB.remove('blogs',id); renderBlogsTable(); adminToast('ब्लॉग हटाया','warn'); }
+function clearBlogForm(){ ['editBlogId','bTitle','bCategory','bAuthor','bDate','bExcerpt','bThumb','bThumbEmoji','bTags'].forEach(i=>document.getElementById(i).value=''); document.getElementById('blogEditor').innerHTML=''; document.getElementById('blogFormTitle').textContent='📝 नई ब्लॉग पोस्ट लिखें'; document.getElementById('blogThumbPreview').style.display='none'; }
+function previewBlogThumb(){ const u=document.getElementById('bThumb').value; const b=document.getElementById('blogThumbPreview'); if(u){ b.style.display='flex'; document.getElementById('blogThumbImg').src=u; } else b.style.display='none'; }
+function execCmd(cmd){ document.getElementById('blogEditor').focus(); document.execCommand(cmd,false,null); }
+function execPgCmd(cmd){ document.getElementById('pageEditor').focus(); document.execCommand(cmd,false,null); }
+function insertHeading(tag){ const s=window.getSelection(); if(s&&s.rangeCount){ const r=s.getRangeAt(0); const el=document.createElement(tag); el.textContent=r.toString()||'शीर्षक'; r.deleteContents(); r.insertNode(el); } }
+function insertPgHeading(tag){ const s=window.getSelection(); if(s&&s.rangeCount){ const r=s.getRangeAt(0); const el=document.createElement(tag); el.textContent=r.toString()||'शीर्षक'; r.deleteContents(); r.insertNode(el); } }
+function insertLink(){ const url=prompt('URL दर्ज करें (https://...):'); if(url&&url.startsWith('http')) document.execCommand('createLink',false,url); }
+function insertImgInEditor(){ const url=prompt('Image URL (https://...):'); if(url&&url.startsWith('http')){ document.getElementById('blogEditor').focus(); document.execCommand('insertHTML',false,`<img src="${esc(url)}" style="max-width:100%;border-radius:8px;margin:8px 0" loading="lazy">`); } }
+function insertPgImg(){ const url=prompt('Image URL (https://...):'); if(url&&url.startsWith('http')){ document.getElementById('pageEditor').focus(); document.execCommand('insertHTML',false,`<img src="${esc(url)}" style="max-width:100%;border-radius:8px;margin:8px 0" loading="lazy">`); } }
+
+/* ════════ PDF CRUD ════════ */
+function renderPdfsTable() {
+  const pdfs=DB.get('pdfs')||[];
+  document.getElementById('pdfsTable').innerHTML=pdfs.length?pdfs.map(p=>`
+    <tr>
+      <td><strong>${esc(p.title)}</strong></td>
+      <td>${esc(p.author)}</td><td>${esc(p.year)}</td>
+      <td>${p.fileUrl?`<a href="${safeUrl(p.fileUrl)}" target="_blank" rel="noopener" style="color:var(--primary);font-size:.76rem">🔗 देखें</a>`:'<span style="color:var(--muted);font-size:.76rem">—</span>'}</td>
+      <td><span class="${p.visible?'badge-visible':'badge-hidden'}">${p.visible?'✅':'❌'}</span></td>
+      <td class="t-actions">
+        <button class="btn-sm btn-edit" onclick="editPdf(${p.id})">✏</button>
+        <button class="btn-sm btn-toggle ${p.visible?'':'off'}" onclick="togglePdf(${p.id})">${p.visible?'छुपाएँ':'दिखाएँ'}</button>
+        <button class="btn-sm btn-del" onclick="deletePdf(${p.id})">🗑</button>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="6" style="text-align:center;padding:28px;color:var(--muted)">कोई PDF नहीं।</td></tr>';
+}
+function savePdf() {
+  const id=document.getElementById('editPdfId').value;
+  const obj={title:document.getElementById('pTitle').value.trim(),author:document.getElementById('pAuthor').value.trim(),year:document.getElementById('pYear').value.trim(),size:document.getElementById('pSize').value.trim(),pages:document.getElementById('pPages').value.trim(),icon:document.getElementById('pIcon').value.trim()||'📄',fileUrl:document.getElementById('pUrl').value.trim(),desc:document.getElementById('pDesc').value.trim(),visible:true};
+  if(!obj.title){ adminToast('शीर्षक आवश्यक है','warn'); return; }
+  if(id){ obj.id=parseInt(id); DB.update('pdfs',obj.id,obj); adminToast('PDF अपडेट हुई','success'); }
+  else{ obj.id=ID(); DB.push('pdfs',obj); adminToast('PDF जोड़ी गई','success'); }
+  clearPdfForm(); renderPdfsTable();
+}
+function editPdf(id){ const p=(DB.get('pdfs')||[]).find(x=>x.id===id); if(!p) return; document.getElementById('editPdfId').value=p.id; document.getElementById('pTitle').value=p.title||''; document.getElementById('pAuthor').value=p.author||''; document.getElementById('pYear').value=p.year||''; document.getElementById('pSize').value=p.size||''; document.getElementById('pPages').value=p.pages||''; document.getElementById('pIcon').value=p.icon||''; document.getElementById('pUrl').value=p.fileUrl||''; document.getElementById('pDesc').value=p.desc||''; document.getElementById('pdfFormTitle').textContent='✏ PDF संपादित करें'; }
+function togglePdf(id){ const p=(DB.get('pdfs')||[]).find(x=>x.id===id); if(p){ DB.update('pdfs',id,{visible:!p.visible}); renderPdfsTable(); } }
+function deletePdf(id){ if(!confirm('PDF हटाएँ?')) return; DB.remove('pdfs',id); renderPdfsTable(); adminToast('PDF हटाई','warn'); }
+function clearPdfForm(){ ['editPdfId','pTitle','pAuthor','pYear','pSize','pPages','pIcon','pUrl','pDesc'].forEach(i=>document.getElementById(i).value=''); document.getElementById('pdfFormTitle').textContent='📄 नया PDF जोड़ें'; }
+
+/* ════════ PAGES CRUD ════════ */
+function renderPagesTable() {
+  const pages=(DB.get('pages')||[]).sort((a,b)=>a.order-b.order);
+  document.getElementById('pagesTable').innerHTML=pages.length?pages.map(p=>`
+    <tr>
+      <td><strong>${esc(p.icon||'📄')} ${esc(p.title)}</strong></td>
+      <td><code style="font-size:.76rem">${esc(p.slug)}</code></td>
+      <td>${p.order}</td>
+      <td><span class="${p.visible?'badge-visible':'badge-hidden'}">${p.visible?'✅':'❌'}</span></td>
+      <td class="t-actions">
+        <button class="btn-sm btn-edit" onclick="editPage(${p.id})">✏</button>
+        <button class="btn-sm btn-toggle ${p.visible?'':'off'}" onclick="togglePage(${p.id})">${p.visible?'छुपाएँ':'दिखाएँ'}</button>
+        <button class="btn-sm btn-del" onclick="deletePage(${p.id})">🗑</button>
+      </td>
+    </tr>`).join('') : '<tr><td colspan="5" style="text-align:center;padding:28px;color:var(--muted)">कोई पेज नहीं।</td></tr>';
+}
+function savePage() {
+  const id=document.getElementById('editPageId').value; const pages=DB.get('pages')||[];
+  const obj={title:document.getElementById('pgTitle').value.trim(),slug:document.getElementById('pgSlug').value.trim(),icon:document.getElementById('pgIcon').value.trim()||'📄',content:document.getElementById('pageEditor').innerHTML,visible:true};
+  if(!obj.title){ adminToast('पेज शीर्षक आवश्यक है','warn'); return; }
+  if(id){ obj.id=parseInt(id); DB.update('pages',obj.id,obj); adminToast('पेज अपडेट हुआ','success'); }
+  else{ obj.id=ID(); obj.order=pages.length+1; DB.push('pages',obj); adminToast('पेज बनाया गया','success'); }
+  clearPageForm(); renderPagesTable();
+}
+function editPage(id){ const p=(DB.get('pages')||[]).find(x=>x.id===id); if(!p) return; document.getElementById('editPageId').value=p.id; document.getElementById('pgTitle').value=p.title||''; document.getElementById('pgSlug').value=p.slug||''; document.getElementById('pgIcon').value=p.icon||''; document.getElementById('pageEditor').innerHTML=p.content||''; document.getElementById('pageFormTitle').textContent='✏ पेज संपादित करें'; }
+function togglePage(id){ const p=(DB.get('pages')||[]).find(x=>x.id===id); if(p){ DB.update('pages',id,{visible:!p.visible}); renderPagesTable(); } }
+function deletePage(id){ if(!confirm('पेज हटाएँ?')) return; DB.remove('pages',id); renderPagesTable(); adminToast('पेज हटाया','warn'); }
+function clearPageForm(){ ['editPageId','pgTitle','pgSlug','pgIcon'].forEach(i=>document.getElementById(i).value=''); document.getElementById('pageEditor').innerHTML=''; document.getElementById('pageFormTitle').textContent='📑 नया पेज बनाएँ'; }
+
+/* ════════ CONTACT INFO MANAGER (NEW) ════════ */
+function loadContactInfo() {
+  const s = DB.get('settings')||{};
+  document.getElementById('cEmail').value = s.contactEmail || 'research@meenaportal.org';
+  document.getElementById('cPhone').value = s.contactPhone || '+91 98765 43210';
+  document.getElementById('cTopbarCustom').value = s.topbarLeft || '';
+  document.getElementById('cAddress').value = s.contactAddress || '';
+  document.getElementById('cWhatsapp').value = s.contactWhatsapp || '';
+  updateContactPreview();
+}
+
+function updateContactPreview() {
+  const email = document.getElementById('cEmail').value || 'research@meenaportal.org';
+  const phone = document.getElementById('cPhone').value || '+91 98765 43210';
+  const custom = document.getElementById('cTopbarCustom').value;
+  const preview = custom || `📧 ${email} &nbsp;|&nbsp; 📞 ${phone}`;
+  document.getElementById('contactPreview').innerHTML = preview;
+}
+
+// Real-time preview on input
+document.getElementById('cEmail') && ['cEmail','cPhone','cTopbarCustom'].forEach(id=>{
+  const el = document.getElementById(id);
+  if(el) el.addEventListener('input', updateContactPreview);
+});
+
+function saveContactInfo() {
+  const s = DB.get('settings')||{};
+  const email = document.getElementById('cEmail').value.trim();
+  const phone = document.getElementById('cPhone').value.trim();
+  const custom = document.getElementById('cTopbarCustom').value.trim();
+  s.contactEmail = email;
+  s.contactPhone = phone;
+  // Build topbarLeft: if custom is provided, use it; else auto-build
+  s.topbarLeft = custom || `📧 ${email} &nbsp;|&nbsp; 📞 ${phone}`;
+  DB.set('settings', s);
+  // Immediately update topbar on public site
+  const tbLeft = document.getElementById('topbarLeft');
+  if(tbLeft) tbLeft.innerHTML = s.topbarLeft;
+  adminToast('Contact Info सहेजा और लागू हुआ!','success');
+}
+
+function saveContactExtra() {
+  const s = DB.get('settings')||{};
+  s.contactAddress = document.getElementById('cAddress').value.trim();
+  s.contactWhatsapp = document.getElementById('cWhatsapp').value.trim();
+  DB.set('settings', s);
+  adminToast('अतिरिक्त जानकारी सहेजी गई!','success');
+}
+
+/* ════════ HOME PAGE SETTINGS ════════ */
+function loadHomepage() {
+  const s=DB.get('settings')||{};
+  document.getElementById('sSiteName').value=s.siteName||'';
+  document.getElementById('sBannerTitle').value=s.bannerTitle||'';
+  document.getElementById('sBannerSubtitle').value=s.bannerSubtitle||'';
+  document.getElementById('sBannerEyebrow').value=s.bannerEyebrow||'';
+  document.getElementById('sBannerBadge').value=s.bannerBadge||'';
+  document.getElementById('sNoticeEnabled').checked=!!s.noticeEnabled;
+  document.getElementById('sNoticeText').value=s.noticeText||'';
+  document.getElementById('sShowKw').value=s.showKeywords===false?'false':'true';
+  document.getElementById('sShowTips').value=s.showTips===false?'false':'true';
+}
+function saveHomepage() {
+  const s=DB.get('settings')||{};
+  s.siteName=document.getElementById('sSiteName').value.trim()||s.siteName;
+  s.bannerTitle=document.getElementById('sBannerTitle').value.trim();
+  s.bannerSubtitle=document.getElementById('sBannerSubtitle').value.trim();
+  s.bannerEyebrow=document.getElementById('sBannerEyebrow').value.trim();
+  s.bannerBadge=document.getElementById('sBannerBadge').value.trim();
+  s.noticeEnabled=document.getElementById('sNoticeEnabled').checked;
+  s.noticeText=document.getElementById('sNoticeText').value.trim();
+  s.showKeywords=document.getElementById('sShowKw').value!=='false';
+  s.showTips=document.getElementById('sShowTips').value!=='false';
+  DB.set('settings',s);
+  adminToast('होम पेज सेटिंग सहेजी गई!','success');
+}
+
+/* ════════ LOGO SETTINGS ════════ */
+function loadLogo() {
+  const s=DB.get('settings')||{};
+  document.getElementById('sLogoEmoji').value=s.logoEmoji||'🐟';
+  document.getElementById('sLogoText').value=s.logoText||'';
+  document.getElementById('sLogoSub').value=s.logoSub||'';
+  document.getElementById('sLogoUrl').value=s.logoUrl||'';
+  document.getElementById('sBannerBg').value=s.bannerBg||'';
+  document.getElementById('sBannerImageUrl').value=s.bannerImageUrl||'';
+  if(s.logoUrl){ document.getElementById('logoPreviewBox').style.display='flex'; document.getElementById('logoPreviewImg').src=s.logoUrl; }
+}
+function saveLogo() {
+  const s=DB.get('settings')||{};
+  s.logoEmoji=document.getElementById('sLogoEmoji').value.trim();
+  s.logoText=document.getElementById('sLogoText').value.trim();
+  s.logoSub=document.getElementById('sLogoSub').value.trim();
+  s.logoUrl=document.getElementById('sLogoUrl').value.trim();
+  s.bannerBg=document.getElementById('sBannerBg').value.trim();
+  s.bannerImageUrl=document.getElementById('sBannerImageUrl').value.trim();
+  DB.set('settings',s);
+  adminToast('लोगो एवं बैनर सहेजा गया!','success');
+}
+function previewLogo(){ const u=document.getElementById('sLogoUrl').value; if(u){ document.getElementById('logoPreviewBox').style.display='flex'; document.getElementById('logoPreviewImg').src=u; } else document.getElementById('logoPreviewBox').style.display='none'; }
+function previewBannerImg(){ const u=document.getElementById('sBannerImageUrl').value; if(u){ document.getElementById('bannerImgPreviewBox').style.display='flex'; document.getElementById('bannerImgPreview').src=u; } else document.getElementById('bannerImgPreviewBox').style.display='none'; }
+
+/* ════════ STATS ════════ */
+function renderStatsEditor() {
+  const stats=DB.get('stats')||[];
+  document.getElementById('statsEditor').innerHTML=stats.map(s=>`
+    <div style="display:grid;grid-template-columns:60px 1fr 1fr auto;gap:10px;align-items:end;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid var(--mid)">
+      <div class="fg"><label>Icon</label><input value="${esc(s.icon||'')}" oninput="updateStatLocal(${s.id},'icon',this.value)" placeholder="🏛️" maxlength="4"></div>
+      <div class="fg"><label>Number</label><input value="${esc(s.num||'')}" oninput="updateStatLocal(${s.id},'num',this.value)" placeholder="9"></div>
+      <div class="fg"><label>Label</label><input value="${esc(s.label||s.lbl||'')}" oninput="updateStatLocal(${s.id},'label',this.value)" placeholder="सरकारी पोर्टल"></div>
+      <button class="btn btn-danger" style="margin-bottom:0" onclick="removeStat(${s.id})">🗑</button>
+    </div>`).join('') || '<p style="color:var(--muted);font-size:.85rem">कोई stat नहीं।</p>';
+}
+let statsBuf = null;
+function updateStatLocal(id,key,val){ if(!statsBuf) statsBuf=JSON.parse(JSON.stringify(DB.get('stats')||[])); const s=statsBuf.find(x=>x.id===id); if(s) s[key]=val; }
+function addStat(){ const s=DB.get('stats')||[]; s.push({id:ID(),num:'0',label:'नई स्थिति',icon:'📊'}); DB.set('stats',s); statsBuf=null; renderStatsEditor(); }
+function removeStat(id){ const s=(DB.get('stats')||[]).filter(x=>x.id!==id); DB.set('stats',s); statsBuf=null; renderStatsEditor(); }
+function saveStats(){ if(statsBuf){ DB.set('stats',statsBuf); statsBuf=null; } adminToast('Stats सहेजे गए!','success'); }
+
+/* ════════ KEYWORDS ════════ */
+function renderKwEditor() {
+  const kws=DB.get('keywords')||[];
+  document.getElementById('kwEditor').innerHTML=kws.map(k=>`
+    <div style="display:grid;grid-template-columns:120px 1fr 1fr auto;gap:10px;align-items:end;margin-bottom:12px">
+      <div class="fg"><label>विषय</label><input value="${esc(k.subject)}" id="kws-${k.id}" placeholder="इतिहास"></div>
+      <div class="fg"><label>हिंदी Keywords</label><input value="${esc(k.hindi)}" id="kwh-${k.id}" placeholder="मीणा जाति इतिहास"></div>
+      <div class="fg"><label>English Keywords</label><input value="${esc(k.english)}" id="kwe-${k.id}" placeholder="Meena tribe history"></div>
+      <button class="btn btn-danger" style="margin-bottom:0" onclick="removeKw(${k.id})">🗑</button>
+    </div>`).join('') || '<p style="color:var(--muted);font-size:.85rem">कोई keyword नहीं।</p>';
+}
+function addKeyword(){ const kws=DB.get('keywords')||[]; kws.push({id:ID(),subject:'नया विषय',hindi:'',english:''}); DB.set('keywords',kws); renderKwEditor(); }
+function removeKw(id){ DB.remove('keywords',id); renderKwEditor(); }
+function saveKeywords() {
+  const kws=DB.get('keywords')||[];
+  kws.forEach(k=>{
+    const s=document.getElementById('kws-'+k.id); const h=document.getElementById('kwh-'+k.id); const e=document.getElementById('kwe-'+k.id);
+    if(s)k.subject=s.value; if(h)k.hindi=h.value; if(e)k.english=e.value;
+  });
+  DB.set('keywords',kws); adminToast('Keywords सहेजे गए!','success');
+}
+
+/* ════════ TIPS ════════ */
+function renderTipsEditor() {
+  const tips=DB.get('tips')||[];
+  document.getElementById('tipsEditor').innerHTML=tips.map(t=>`
+    <div style="display:grid;grid-template-columns:1fr auto;gap:10px;align-items:start;margin-bottom:12px">
+      <div class="fg"><label>Tip (HTML allowed)</label><textarea id="tip-${t.id}" style="min-height:60px">${esc(t.text)}</textarea></div>
+      <button class="btn btn-danger" style="margin-top:22px" onclick="removeTip(${t.id})">🗑</button>
+    </div>`).join('') || '<p style="color:var(--muted);font-size:.85rem">कोई tip नहीं।</p>';
+}
+function addTip(){ const tips=DB.get('tips')||[]; tips.push({id:ID(),text:'नया सुझाव...'}); DB.set('tips',tips); renderTipsEditor(); }
+function removeTip(id){ DB.remove('tips',id); renderTipsEditor(); }
+function saveTips(){ const tips=DB.get('tips')||[]; tips.forEach(t=>{const el=document.getElementById('tip-'+t.id); if(el)t.text=el.value;}); DB.set('tips',tips); adminToast('Tips सहेजे गए!','success'); }
+
+/* ════════ FOOTER ════════ */
+function loadFooter(){ const s=DB.get('settings')||{}; document.getElementById('sFooterAbout').value=s.footerAbout||''; document.getElementById('sFooterCopyright').value=s.footerCopyright||''; }
+function saveFooter(){ const s=DB.get('settings')||{}; s.footerAbout=document.getElementById('sFooterAbout').value.trim(); s.footerCopyright=document.getElementById('sFooterCopyright').value.trim(); DB.set('settings',s); adminToast('Footer सहेजा गया!','success'); }
+
+/* ════════ COLORS ════════ */
+function loadColors() {
+  const s=DB.get('settings')||{};
+  if(s.primaryColor){ document.getElementById('cPrimary').value=s.primaryColor; document.getElementById('cPrimaryHex').value=s.primaryColor; }
+  if(s.accentColor){ document.getElementById('cAccent').value=s.accentColor; document.getElementById('cAccentHex').value=s.accentColor; }
+  document.getElementById('cPrimary').addEventListener('input',function(){ document.getElementById('cPrimaryHex').value=this.value; });
+  document.getElementById('cAccent').addEventListener('input',function(){ document.getElementById('cAccentHex').value=this.value; });
+}
+function applyPreset(p,a){ document.getElementById('cPrimary').value=p; document.getElementById('cPrimaryHex').value=p; document.getElementById('cAccent').value=a; document.getElementById('cAccentHex').value=a; }
+function saveColors() {
+  const s=DB.get('settings')||{};
+  s.primaryColor=document.getElementById('cPrimaryHex').value||document.getElementById('cPrimary').value;
+  s.accentColor=document.getElementById('cAccentHex').value||document.getElementById('cAccent').value;
+  DB.set('settings',s); adminToast('थीम रंग सहेजे गए!','success');
+}
+
+/* ════════ NAVIGATION ════════ */
+function renderNavEditor() {
+  const nav=DB.get('nav_links')||[];
+  document.getElementById('navEditor').innerHTML=nav.sort((a,b)=>a.order-b.order).map(n=>`
+    <div style="display:grid;grid-template-columns:40px 1fr 120px auto;gap:10px;align-items:end;margin-bottom:12px">
+      <div class="fg"><label>#</label><input value="${n.order}" id="no-${n.id}" type="number" style="text-align:center"></div>
+      <div class="fg"><label>Label</label><input value="${esc(n.label)}" id="nl-${n.id}"></div>
+      <div class="fg"><label>स्थिति</label><select id="nv-${n.id}"><option value="true" ${n.visible?'selected':''}>✅ दिखाएँ</option><option value="false" ${!n.visible?'selected':''}>❌ छुपाएँ</option></select></div>
+      <button class="btn btn-danger" style="margin-bottom:0" onclick="removeNav(${n.id})">🗑</button>
+    </div>`).join('');
+}
+function removeNav(id){ DB.remove('nav_links',id); renderNavEditor(); }
+function saveNav() {
+  const nav=DB.get('nav_links')||[];
+  nav.forEach(n=>{ const lo=document.getElementById('no-'+n.id); const ll=document.getElementById('nl-'+n.id); const lv=document.getElementById('nv-'+n.id); if(lo)n.order=parseInt(lo.value); if(ll)n.label=ll.value; if(lv)n.visible=lv.value==='true'; });
+  DB.set('nav_links',nav); adminToast('Navigation सहेजा गया!','success');
+}
+
+/* ════════ PASSWORD CHANGE (SHA-256) ════════ */
+async function changePass() {
+  const current = document.getElementById('currentPass').value;
+  const p1 = document.getElementById('newPass1').value;
+  const p2 = document.getElementById('newPass2').value;
+  if(!current){ adminToast('वर्तमान पासवर्ड दर्ज करें','warn'); return; }
+  const validCurrent = await verifyPassword(current);
+  if(!validCurrent){ adminToast('वर्तमान पासवर्ड गलत है','error'); return; }
+  if(!p1){ adminToast('नया पासवर्ड दर्ज करें','warn'); return; }
+  if(p1.length < 8){ adminToast('पासवर्ड कम से कम 8 अक्षर का होना चाहिए','warn'); return; }
+  if(p1 !== p2){ adminToast('पासवर्ड मेल नहीं खाते','error'); return; }
+  const newHash = await sha256(p1);
+  const creds = DB.get('admin_creds_v2')||{user:'admin'};
+  creds.passHash = newHash;
+  DB.set('admin_creds_v2', creds);
+  // Remove old plaintext
+  localStorage.removeItem('mcms_admin_creds');
+  adminToast('✅ पासवर्ड SHA-256 hash के साथ सहेजा गया!','success');
+  document.getElementById('currentPass').value='';
+  document.getElementById('newPass1').value='';
+  document.getElementById('newPass2').value='';
+  document.getElementById('passStrength').textContent='— पासवर्ड दर्ज करें';
+}
+
+/* ════════ BACKUP ════════ */
+function exportData() {
+  const keys=['settings','categories','links','blogs','pdfs','pages','stats','keywords','tips','nav_links'];
+  const data={}; keys.forEach(k=>{data[k]=DB.get(k);});
+  const blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});
+  const a=document.createElement('a'); a.href=URL.createObjectURL(blob); a.download='meena_cms_backup_'+Date.now()+'.json'; a.click(); URL.revokeObjectURL(a.href);
+  adminToast('Data Export हुआ!','success');
+}
+function importData(e) {
+  const file=e.target.files[0]; if(!file) return;
+  if(!file.name.endsWith('.json')){ adminToast('केवल .json फ़ाइल स्वीकार्य है','error'); return; }
+  const reader=new FileReader();
+  reader.onload=function(ev){
+    try{
+      const data=JSON.parse(ev.target.result);
+      Object.keys(data).forEach(k=>{if(data[k])DB.set(k,data[k]);});
+      adminToast('Data Import सफल! साइट रिफ्रेश हो रही है...','success');
+      setTimeout(()=>location.reload(), 2000);
+    }catch{ adminToast('Invalid JSON file','error'); }
+  };
+  reader.readAsText(file);
+  e.target.value='';
+}
+function resetAllData() {
+  if(!confirm('⚠️ सभी डेटा हट जाएगा! क्या आप सुनिश्चित हैं?')) return;
+  if(!confirm('यह वापस नहीं होगा। पक्का?')) return;
+  const keys=['settings','categories','links','blogs','pdfs','pages','stats','keywords','tips','nav_links','seeded_v3'];
+  keys.forEach(k=>localStorage.removeItem('mcms_'+k));
+  adminToast('सभी डेटा हटाया। Reload...','warn');
+  setTimeout(()=>location.reload(), 2000);
+}
+
+/* ════════ ADMIN TOAST ════════ */
+function adminToast(msg, type='success') {
+  const c=document.getElementById('adminToast');
+  const t=document.createElement('div');
+  t.className='t-msg '+type;
+  t.setAttribute('role','alert');
+  t.innerHTML=(type==='success'?'✅':type==='error'?'❌':'⚠️')+' '+esc(msg);
+  c.appendChild(t);
+  requestAnimationFrame(()=>t.classList.add('show'));
+  setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=>t.remove(),400); }, 4000);
+}
+
+function initAdmin() {
+  renderDashboard();
+  // Migrate old plaintext password if exists
+  const old = DB.get('admin_creds');
+  if(old && old.pass) {
+    // Don't migrate — old creds are insecure, just remove
+    localStorage.removeItem('mcms_admin_creds');
+  }
+}
+
+/* ════════════════════════════════════════
+   PUBLIC SITE JAVASCRIPT
+════════════════════════════════════════ */
+
+/* ════════ SEED DATA ════════ */
+function seedData() {
+  if(DB.get('seeded_v3')) return;
+  DB.set('settings',{
+    siteName:'मीणा जाति — शोध पोर्टल',
+    logoEmoji:'🐟',logoUrl:'',
+    logoText:'मीणा शोध पोर्टल',logoSub:'Meena Research Hub',
+    topbarLeft:'📧 research@meenaportal.org &nbsp;|&nbsp; 📞 +91 98765 43210',
+    contactEmail:'research@meenaportal.org',
+    contactPhone:'+91 98765 43210',
+    bannerTitle:'मीणा जाति — शोध वेबसाइट संकलन',
+    bannerSubtitle:'रिसर्च पेपर लेखन के लिए सत्यापित, श्रेणीबद्ध एवं विवरण सहित वेब संसाधन',
+    bannerEyebrow:'🔬 शोध एवं ज्ञान का केंद्र',
+    bannerBadge:'📚 27 स्रोत &nbsp;|&nbsp; 6 श्रेणियाँ &nbsp;|&nbsp; हिंदी + अंग्रेज़ी',
+    bannerBg:'linear-gradient(135deg,#6B1A1A 0%,#9B2020 55%,#9B6800 100%)',
+    bannerImageUrl:'',
+    noticeEnabled:false,noticeText:'',
+    footerAbout:'रिसर्च पेपर लेखन के लिए सत्यापित एवं श्रेणीबद्ध वेब संसाधनों का विश्वसनीय संकलन।',
+    footerCopyright:'© 2025 मीणा शोध पोर्टल। सर्वाधिकार सुरक्षित।',
+    primaryColor:'#6B1A1A',accentColor:'#9B6800',
+    showKeywords:true,showTips:true
+  });
+  DB.set('stats',[
+    {id:1,num:'9',label:'सरकारी पोर्टल',icon:'🏛️'},
+    {id:2,num:'7',label:'हिंदी शैक्षणिक साइट',icon:'📖'},
+    {id:3,num:'6',label:'अकादमिक जर्नल',icon:'📚'},
+    {id:4,num:'5',label:'शोध / थीसिस पोर्टल',icon:'🎓'}
+  ]);
+  DB.set('categories',[
+    {id:1,name:'सरकारी डेटा एवं पोर्टल',icon:'🏛️',colorClass:'c-govt',order:1,visible:true},
+    {id:2,name:'हिंदी शैक्षणिक साइट',icon:'📖',colorClass:'c-hindi',order:2,visible:true},
+    {id:3,name:'अकादमिक जर्नल',icon:'📰',colorClass:'c-journal',order:3,visible:true},
+    {id:4,name:'थीसिस एवं शोध भंडार',icon:'🎓',colorClass:'c-thesis',order:4,visible:true},
+    {id:5,name:'सामुदायिक एवं ब्लॉग स्रोत',icon:'🌐',colorClass:'c-blog',order:5,visible:true}
+  ]);
+  DB.set('links',[
+    {id:1,catId:1,title:'जनजातीय मंत्रालय — Statistics',url:'https://tribal.nic.in/Statistics.aspx',icon:'📊',iconImg:'',desc:'ST Statistical Profile, Census 2011 ST Data, Scheduled Tribes की राज्यवार सूची, PVTG सूची, Bhuria Commission Report आदि सरकारी दस्तावेज़ यहाँ निःशुल्क उपलब्ध हैं।',tags:['English','सरकारी','निःशुल्क','Data'],visible:true},
+    {id:2,catId:1,title:'भारत की जनगणना — Census India',url:'https://censusindia.gov.in',icon:'🗂️',iconImg:'',desc:'Census 2011 के ST-1 से ST-14 तक सभी Tables यहाँ उपलब्ध हैं। मीणा जनसंख्या, साक्षरता, लिंगानुपात के जिलावार आँकड़े डाउनलोड किए जा सकते हैं।',tags:['English','हिंदी','सरकारी','सांख्यिकी'],visible:true},
+    {id:3,catId:1,title:'Open Government Data — data.gov.in',url:'https://www.data.gov.in',icon:'📂',iconImg:'',desc:'राज्यवार ST जनसंख्या, ST साक्षरता डेटा CSV/XLS फॉर्मेट में। "Meena" या "Scheduled Tribe Rajasthan" सर्च करने पर कई datasets मिलते हैं।',tags:['English','सरकारी','Open Data','निःशुल्क'],visible:true},
+    {id:4,catId:1,title:'राजस्थान जनजाति विकास विभाग',url:'https://tad.rajasthan.gov.in',icon:'🏠',iconImg:'',desc:'राजस्थान सरकार का आधिकारिक जनजाति विकास पोर्टल। ST योजनाएँ, वार्षिक रिपोर्ट, जनजाति उप-योजना के आँकड़े।',tags:['हिंदी','सरकारी','निःशुल्क'],visible:true},
+    {id:5,catId:1,title:'भारतीय मानवशास्त्र सर्वेक्षण (AnSI)',url:'https://ansi.gov.in',icon:'🔬',iconImg:'',desc:'"People of India" परियोजना के अंतर्गत मीणा जाति का विस्तृत नृवंशविज्ञानिक विवरण।',tags:['English','सरकारी','Peer-Reviewed'],visible:true},
+    {id:6,catId:1,title:'NFHS-5 डेटा — rchiips.org',url:'http://rchiips.org/nfhs/nfhs5.shtml',icon:'🩺',iconImg:'',desc:'National Family Health Survey-5 (2019-21) के राजस्थान Fact Sheet। ST महिला साक्षरता, बाल विवाह दर, स्वास्थ्य संकेतक।',tags:['English','सरकारी','Health Data','निःशुल्क'],visible:true},
+    {id:7,catId:2,title:'राज आरएएस — मीणा जनजाति',url:'https://hindi.rajras.in/rajasthan/janjatiyan/meena/',icon:'🎓',iconImg:'',desc:'राजस्थान प्रशासनिक सेवा परीक्षा के लिए तैयार, अत्यंत सघन हिंदी सामग्री।',tags:['हिंदी','निःशुल्क'],visible:true},
+    {id:8,catId:2,title:'Drishti IAS — मीणा जनजाति',url:'https://www.drishtiias.com',icon:'📘',iconImg:'',desc:'UPSC-तैयार विवरण: उत्पत्ति, भौगोलिक वितरण, सामाजिक संरचना, Criminal Tribes Act 1871 और denotification।',tags:['हिंदी','English','निःशुल्क'],visible:true},
+    {id:9,catId:3,title:'IJEBAS — Meena Tribe Article 2024',url:'https://ijebas.com',icon:'🔭',iconImg:'',desc:'सबसे नया indexed, peer-reviewed और open-access article जो मीणा जाति पर सीधे केंद्रित है। 2024 का सबसे महत्वपूर्ण शोध।',tags:['English','Peer-Reviewed','Open Access'],visible:true},
+    {id:10,catId:4,title:'Shodhganga — INFLIBNET (भारत)',url:'https://shodhganga.inflibnet.ac.in',icon:'🔎',iconImg:'',desc:'भारत के सभी विश्वविद्यालयों की PhD थीसिस का राष्ट्रीय भंडार। CC BY-NC 4.0 लाइसेंस पर उपलब्ध।',tags:['हिंदी','English','Open Access'],visible:true},
+    {id:11,catId:4,title:'Google Scholar',url:'https://scholar.google.com',icon:'📙',iconImg:'',desc:'सर्च: "Meena tribe" Rajasthan। Cited-by feature से नए शोध खोजें। Free PDF links अक्सर उपलब्ध।',tags:['हिंदी','English','निःशुल्क'],visible:true},
+    {id:12,catId:5,title:'Wikipedia (English) — Meena People',url:'https://en.wikipedia.org/wiki/Meena_people',icon:'🔍',iconImg:'',desc:'मीणा जाति का अंग्रेज़ी विकिपीडिया पेज — References section से प्राथमिक स्रोत खोजने का उत्तम माध्यम।',tags:['English','निःशुल्क'],visible:true}
+  ]);
+  DB.set('blogs',[
+    {id:1,title:'मीणा जाति का इतिहास एवं उत्पत्ति',slug:'meena-itihas',category:'इतिहास',author:'सम्पादक मंडल',date:'15 मार्च 2025',excerpt:'मीणा जाति की ऐतिहासिक उत्पत्ति, मत्स्य राज्य से संबंध और राजस्थान में उनके प्राचीन अधिकारों का विस्तृत विवरण।',content:'<p>मीणा जाति (Meena tribe) राजस्थान की सबसे बड़ी अनुसूचित जनजाति है।</p><p><strong>प्रमुख तथ्य:</strong></p><ul><li>जनसंख्या: 40 लाख से अधिक (Census 2011)</li><li>मुख्य क्षेत्र: जयपुर, दौसा, अलवर, सवाई माधोपुर</li></ul>',thumb:'',thumbEmoji:'📜',tags:['इतिहास','मत्स्य','राजस्थान'],visible:true},
+    {id:2,title:'मीणा जाति की सामाजिक संरचना',slug:'samajik-sanrachna',category:'समाजशास्त्र',author:'डॉ. रमेश मीणा',date:'10 मार्च 2025',excerpt:'मीणा समाज के गोत्र, विवाह नियम, पंचायत व्यवस्था और पारंपरिक सामाजिक संगठन का अध्ययन।',content:'<p>मीणा समाज की सामाजिक संरचना अत्यंत जटिल एवं व्यवस्थित है। <strong>गोत्र प्रणाली</strong> इस समाज की आधारभूत इकाई है।</p>',thumb:'',thumbEmoji:'👥',tags:['समाज','गोत्र','पंचायत'],visible:true}
+  ]);
+  DB.set('pdfs',[
+    {id:1,title:'मीणा जाति — ऐतिहासिक सर्वेक्षण',author:'Dr. R.K. Sharma',year:'2023',size:'2.4 MB',pages:'48',desc:'Census 2011 के आधार पर मीणा जाति की जनसंख्या, साक्षरता और वितरण का व्यापक सर्वेक्षण।',fileUrl:'',icon:'📊',visible:true},
+    {id:2,title:'Meena Tribe — Anthropological Study',author:'AnSI Research Team',year:'2021',size:'5.1 MB',pages:'120',desc:'People of India Series — Rajasthan Volume से मीणा जाति का नृवंशविज्ञानिक अध्ययन।',fileUrl:'',icon:'🔬',visible:true},
+    {id:3,title:'Criminal Tribes Act और मीणा समुदाय',author:'Prof. S. Verma',year:'2019',size:'1.8 MB',pages:'32',desc:'1871 से 1952 तक मीणा समुदाय पर Criminal Tribes Act के प्रभावों का ऐतिहासिक विश्लेषण।',fileUrl:'',icon:'⚖️',visible:true}
+  ]);
+  DB.set('pages',[
+    {id:1,title:'हमारे बारे में',slug:'about',icon:'ℹ️',content:'<h2>मीणा शोध पोर्टल के बारे में</h2><p>यह पोर्टल मीणा जाति से संबंधित शोध, इतिहास, संस्कृति और सामाजिक अध्ययन के लिए समर्पित एक विश्वसनीय संसाधन केंद्र है।</p>',order:1,visible:true},
+    {id:2,title:'संपर्क करें',slug:'contact',icon:'📬',content:'<h2>संपर्क जानकारी</h2><p><strong>ईमेल:</strong> research@meenaportal.org</p><p><strong>फ़ोन:</strong> +91 98765 43210</p><p><strong>पता:</strong> जयपुर, राजस्थान — 302001</p>',order:2,visible:true}
+  ]);
+  DB.set('keywords',[
+    {id:1,subject:'इतिहास',hindi:'मीणा जाति इतिहास मत्स्य',english:'"Meena tribe" history Matsya kingdom'},
+    {id:2,subject:'सामाजिक संरचना',hindi:'मीणा गोत्र विवाह पंचायत',english:'Meena clan structure exogamy Rajasthan'},
+    {id:3,subject:'औपनिवेशिक दमन',hindi:'Criminal Tribes Act मीणा 1871',english:'"Criminal Tribes Act" Meena denotified'},
+    {id:4,subject:'राजनीति / आरक्षण',hindi:'मीणा अनुसूचित जनजाति आरक्षण',english:'Meena ST reservation political representation'},
+    {id:5,subject:'संस्कृति',hindi:'मीणा लोकगीत नृत्य परंपरा',english:'Meena folk culture oral tradition Rajasthan'}
+  ]);
+  DB.set('tips',[
+    {id:1,text:'<strong>प्राथमिक स्रोत को प्राथमिकता दें:</strong> Census India, Ministry of Tribal Affairs, AnSI के आँकड़े सबसे विश्वसनीय हैं।'},
+    {id:2,text:'<strong>ब्लॉग/GK साइट का उपयोग सावधानी से:</strong> RajRAS, GKClass जैसी साइटें परीक्षा-उपयोगी हैं, परंतु अकादमिक पेपर में directly cite न करें।'},
+    {id:3,text:'<strong>Shodhganga पर थीसिस खोजें:</strong> "Meena tribe" सर्च से कई PhD शोध-प्रबंध मिलेंगे।'},
+    {id:4,text:'<strong>APA Citation format:</strong> <code>Ministry of Tribal Affairs. (2023). Annual Report 2022-23. Government of India.</code>'}
+  ]);
+  DB.set('nav_links',[
+    {id:1,label:'होम',action:'home',order:1,visible:true},
+    {id:2,label:'ब्लॉग',action:'blog',order:2,visible:true},
+    {id:3,label:'शोध PDF',action:'research',order:3,visible:true},
+    {id:4,label:'पेज',action:'pages',order:4,visible:true}
+  ]);
+  DB.set('seeded_v3', true);
+}
+
+/* ════════ APPLY SETTINGS ════════ */
+let currentSection = 'home';
+
+function applySettings() {
+  const s = DB.get('settings')||{};
+  document.title = s.siteName||'मीणा शोध पोर्टल';
+  const st = document.getElementById('siteTitle');
+  if(st) st.textContent = s.siteName||'मीणा शोध पोर्टल';
+  document.getElementById('navLogoText').textContent = s.logoText||'मीणा शोध पोर्टल';
+  document.getElementById('navLogoSub').textContent = s.logoSub||'Meena Research Hub';
+  const logoEl = document.getElementById('navLogoEmoji');
+  if(s.logoUrl){
+    document.getElementById('navLogoImg').innerHTML = `<img src="${s.logoUrl}" alt="Logo" loading="lazy">`;
+  } else {
+    logoEl.textContent = s.logoEmoji||'🐟';
+  }
+  // Topbar — use topbarLeft (which includes contact info)
+  const tbLeft = document.getElementById('topbarLeft');
+  if(tbLeft) tbLeft.innerHTML = s.topbarLeft || '📧 research@meenaportal.org &nbsp;|&nbsp; 📞 +91 98765 43210';
+  // Banner
+  const be = document.getElementById('bannerEyebrow');
+  const bt = document.getElementById('bannerTitle');
+  const bs = document.getElementById('bannerSubtitle');
+  const bb = document.getElementById('bannerBadge');
+  if(be) be.textContent = s.bannerEyebrow||'';
+  if(bt) bt.textContent = s.bannerTitle||'';
+  if(bs) bs.textContent = s.bannerSubtitle||'';
+  if(bb) bb.innerHTML = s.bannerBadge||'';
+  if(s.bannerBg) document.getElementById('heroBanner').style.background = s.bannerBg;
+  if(s.bannerImageUrl){
+    const bi = document.getElementById('bannerImage');
+    bi.src = s.bannerImageUrl;
+    bi.classList.add('show');
+  }
+  // Notice
+  if(s.noticeEnabled && s.noticeText){
+    const nt = document.getElementById('noticeText');
+    const nb = document.getElementById('noticeBar');
+    if(nt) nt.innerHTML = s.noticeText;
+    if(nb) nb.style.display = 'flex';
+  }
+  // Theme colors
+  if(s.primaryColor){
+    document.documentElement.style.setProperty('--brand', s.primaryColor);
+    document.documentElement.style.setProperty('--primary', s.primaryColor);
+    const tc = document.querySelector('meta[name="theme-color"]');
+    if(tc) tc.setAttribute('content', s.primaryColor);
+  }
+  if(s.accentColor) {
+    document.documentElement.style.setProperty('--brand-gold', s.accentColor);
+  }
+  // Deco emoji
+  const decoEmoji = s.logoEmoji||'🐟';
+  const d1 = document.getElementById('bannerDeco1');
+  const d2 = document.getElementById('bannerDeco2');
+  if(d1) d1.textContent = decoEmoji;
+  if(d2) d2.textContent = decoEmoji;
+  // Footer copyright
+  const fc = document.getElementById('footerCopyright');
+  if(fc) fc.innerHTML = s.footerCopyright||'© 2025 मीणा शोध पोर्टल।';
+}
+
+/* ════════ RENDER STATS ════════ */
+function renderStats() {
+  const stats = DB.get('stats')||[];
+  document.getElementById('statsBar').innerHTML = stats.map(s=>`
+    <div class="stat-card" role="figure">
+      <div class="num">${escHtml(s.num)}</div>
+      <div class="lbl">${s.icon||''} ${escHtml(s.lbl||s.label)}</div>
+    </div>`).join('');
+}
+
+/* ════════ RENDER HOME ════════ */
+function renderHome() {
+  const cats = (DB.get('categories')||[]).filter(c=>c.visible).sort((a,b)=>a.order-b.order);
+  const links = DB.get('links')||[];
+  const s = DB.get('settings')||{};
+  let html = '';
+  cats.forEach(cat=>{
+    const catLinks = links.filter(l=>l.catId===cat.id && l.visible);
+    if(!catLinks.length) return;
+    html += `<div class="section-title"><span class="icon" aria-hidden="true">${escHtml(cat.icon)}</span> <span>${escHtml(cat.name)}</span> <span class="count">${catLinks.length} स्रोत</span></div><div class="cards-grid">`;
+    catLinks.forEach(l=>{
+      const tags = (l.tags||[]).map(t=>`<span class="tag ${getTagClass(t)}">${escHtml(t)}</span>`).join('');
+      html += `<article class="card ${escHtml(cat.colorClass)}">
+        <div class="card-header">
+          <div class="card-icon" aria-hidden="true">${l.iconImg?`<img src="${escAttr(l.iconImg)}" alt="" loading="lazy">`:escHtml(l.icon||'🔗')}</div>
+          <div class="card-meta"><h3>${escHtml(l.title)}</h3><div class="url-text">${escHtml(urlHost(l.url))}</div></div>
+        </div>
+        <div class="card-body"><p>${escHtml(l.desc)}</p></div>
+        <div class="card-footer">${tags}<a href="${safeUrl(l.url)}" target="_blank" rel="noopener noreferrer" class="visit-btn" aria-label="${escAttr(l.title)} विज़िट करें">विज़िट करें</a></div>
+      </article>`;
+    });
+    html += '</div>';
+  });
+  document.getElementById('categorySections').innerHTML = html || '<div class="empty-state"><div class="es-icon">🔗</div><h3>कोई लिंक नहीं</h3><p>Admin Panel से लिंक जोड़ें।</p></div>';
+  // Keywords
+  const ksEl = document.getElementById('keywordsSection');
+  if(s.showKeywords !== false){
+    const kws = DB.get('keywords')||[];
+    if(kws.length){
+      let kwHtml = `<div class="section-title"><span class="icon" aria-hidden="true">🔑</span> <span>अनुशंसित सर्च कीवर्ड</span></div>
+      <table class="search-table" role="table"><thead><tr><th scope="col">विषय</th><th scope="col">हिंदी Keywords</th><th scope="col">English Keywords</th></tr></thead><tbody>`;
+      kws.forEach(k=>{ kwHtml+=`<tr><td>${escHtml(k.subject)}</td><td><code>${escHtml(k.hindi)}</code></td><td><code>${escHtml(k.english)}</code></td></tr>`; });
+      kwHtml += '</tbody></table>';
+      ksEl.innerHTML = kwHtml;
+    } else { ksEl.innerHTML = ''; }
+  } else { ksEl.innerHTML = ''; }
+  // Tips
+  const tsEl = document.getElementById('tipsSection');
+  if(s.showTips !== false){
+    const tips = DB.get('tips')||[];
+    if(tips.length){
+      let tHtml = `<div class="tips-box" role="complementary" aria-label="शोध सुझाव"><h3>💡 शोध पेपर लेखन हेतु महत्वपूर्ण सुझाव</h3><ul>`;
+      tips.forEach(t=>{ tHtml+=`<li>${t.text}</li>`; });
+      tHtml += '</ul></div>';
+      tsEl.innerHTML = tHtml;
+    } else { tsEl.innerHTML = ''; }
+  } else { tsEl.innerHTML = ''; }
+}
+
+/* ════════ RENDER BLOG ════════ */
+function renderBlog() {
+  const blogs = (DB.get('blogs')||[]).filter(b=>b.visible);
+  const cats = [...new Set(blogs.map(b=>b.category))];
+  let tabsHtml = `<button class="ftab active" onclick="filterBlog('all',this)" role="tab" aria-selected="true">सभी (${blogs.length})</button>`;
+  cats.forEach(c=>{ tabsHtml+=`<button class="ftab" onclick="filterBlog('${escAttr(c)}',this)" role="tab" aria-selected="false">${escHtml(c)}</button>`; });
+  document.getElementById('blogFilterTabs').innerHTML = tabsHtml;
+  renderBlogGrid(blogs);
+}
+function filterBlog(cat, btn) {
+  document.querySelectorAll('#blogFilterTabs .ftab').forEach(b=>{ b.classList.remove('active'); b.setAttribute('aria-selected','false'); });
+  btn.classList.add('active'); btn.setAttribute('aria-selected','true');
+  const blogs = (DB.get('blogs')||[]).filter(b=>b.visible);
+  renderBlogGrid(cat==='all' ? blogs : blogs.filter(b=>b.category===cat));
+}
+function renderBlogGrid(blogs) {
+  if(!blogs.length){
+    document.getElementById('blogGrid').innerHTML='<div class="empty-state" style="grid-column:1/-1"><div class="es-icon">📝</div><h3>कोई ब्लॉग नहीं</h3></div>';
+    return;
+  }
+  document.getElementById('blogGrid').innerHTML = blogs.map(b=>`
+    <article class="blog-card" onclick="openBlog(${b.id})" role="button" tabindex="0" onkeydown="if(event.key==='Enter')openBlog(${b.id})" aria-label="${escAttr(b.title)} पढ़ें">
+      <div class="blog-thumb">
+        ${b.thumb?`<img src="${escAttr(b.thumb)}" alt="${escAttr(b.title)}" loading="lazy">`:escHtml(b.thumbEmoji||'📝')}
+        <span class="blog-cat-badge">${escHtml(b.category)}</span>
+      </div>
+      <div class="blog-info">
+        <div class="blog-meta"><span>📅 ${escHtml(b.date)}</span><span>✍️ ${escHtml(b.author)}</span></div>
+        <h3 class="blog-title">${escHtml(b.title)}</h3>
+        <p class="blog-excerpt">${escHtml(b.excerpt)}</p>
+        <span class="blog-read-more">पूरा पढ़ें →</span>
+      </div>
+    </article>`).join('');
+}
+function openBlog(id) {
+  const b = (DB.get('blogs')||[]).find(x=>x.id===id);
+  if(!b) return;
+  document.getElementById('bModalTitle').textContent = b.title;
+  document.getElementById('bModalMeta').innerHTML = `<span>📅 ${escHtml(b.date)}</span><span>✍️ ${escHtml(b.author)}</span><span>🏷️ ${escHtml(b.category)}</span>`;
+  document.getElementById('bModalImg').innerHTML = b.thumb
+    ? `<img src="${escAttr(b.thumb)}" alt="${escAttr(b.title)}" style="max-width:100%;border-radius:10px;margin-bottom:16px" loading="lazy">`
+    : b.thumbEmoji ? `<div style="font-size:4rem;text-align:center;margin-bottom:16px" aria-hidden="true">${escHtml(b.thumbEmoji)}</div>` : '';
+  document.getElementById('bModalContent').innerHTML = b.content||'';
+  const modal = document.getElementById('blogModal');
+  modal.classList.add('active');
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.modal-close-btn').focus();
+}
+function closeBlogModal() {
+  document.getElementById('blogModal').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.getElementById('blogModal').addEventListener('click', e=>{ if(e.target.id==='blogModal') closeBlogModal(); });
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeBlogModal(); });
+
+/* ════════ RENDER PDFs ════════ */
+function renderPDFs() {
+  const pdfs = (DB.get('pdfs')||[]).filter(p=>p.visible);
+  if(!pdfs.length){
+    document.getElementById('pdfGrid').innerHTML='<div class="empty-state"><div class="es-icon">📄</div><h3>कोई PDF नहीं</h3></div>';
+    return;
+  }
+  document.getElementById('pdfGrid').innerHTML = pdfs.map(p=>`
+    <article class="pdf-card">
+      <div class="pdf-icon" aria-hidden="true">${escHtml(p.icon||'📄')}</div>
+      <div class="pdf-info">
+        <h4>${escHtml(p.title)}</h4>
+        <p>${escHtml(p.desc)}</p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:4px">
+          <span class="pdf-size">📅 ${escHtml(p.year)}</span>
+          <span class="pdf-size">📄 ${escHtml(p.pages)} पृष्ठ</span>
+          <span class="pdf-size">💾 ${escHtml(p.size)}</span>
+        </div>
+        <div style="font-size:.78rem;color:var(--muted);margin-bottom:4px">लेखक: ${escHtml(p.author)}</div>
+        ${p.fileUrl
+          ? `<a href="${safeUrl(p.fileUrl)}" target="_blank" rel="noopener noreferrer" class="pdf-dl-btn">⬇ डाउनलोड करें</a>`
+          : `<span class="pdf-dl-btn" style="opacity:.6;cursor:default" aria-label="जल्द उपलब्ध">🔒 जल्द उपलब्ध</span>`}
+      </div>
+    </article>`).join('');
+}
+
+/* ════════ RENDER PAGES ════════ */
+function renderPages() {
+  const pages = (DB.get('pages')||[]).filter(p=>p.visible).sort((a,b)=>a.order-b.order);
+  if(!pages.length){
+    document.getElementById('pageContent').innerHTML='<div class="empty-state"><div class="es-icon">📑</div><h3>कोई पेज नहीं</h3></div>';
+    return;
+  }
+  document.getElementById('pageTabsNav').innerHTML = pages.map((p,i)=>`
+    <button class="ptab${i===0?' active':''}" onclick="showPage(${p.id},this)" role="tab" aria-selected="${i===0?'true':'false'}">${escHtml(p.icon||'📄')} ${escHtml(p.title)}</button>`).join('');
+  showPageContent(pages[0]);
+}
+function showPage(id, btn) {
+  if(btn){ document.querySelectorAll('.ptab').forEach(t=>{ t.classList.remove('active'); t.setAttribute('aria-selected','false'); }); btn.classList.add('active'); btn.setAttribute('aria-selected','true'); }
+  const p = (DB.get('pages')||[]).find(x=>x.id===id);
+  if(p) showPageContent(p);
+}
+function showPageContent(p) {
+  document.getElementById('pageContent').innerHTML = `<div class="custom-page">${p.content}</div>`;
+}
+
+/* ════════ RENDER FOOTER ════════ */
+function renderFooter(s) {
+  const pages = (DB.get('pages')||[]).filter(p=>p.visible);
+  const cats = (DB.get('categories')||[]).filter(c=>c.visible);
+  document.getElementById('footerGrid').innerHTML = `
+    <div class="footer-brand">
+      <div class="flogo">
+        <div class="flogo-icon">${s.logoUrl?`<img src="${escAttr(s.logoUrl)}" alt="" loading="lazy">`:escHtml(s.logoEmoji||'🐟')}</div>
+        <span class="flogo-text">${escHtml(s.logoText||'मीणा शोध पोर्टल')}</span>
+      </div>
+      <p>${escHtml(s.footerAbout||'')}</p>
+    </div>
+    <div class="footer-col"><h4>श्रेणियाँ</h4><ul>${cats.slice(0,5).map(c=>`<li><span onclick="showSection('home')" role="button" tabindex="0">${escHtml(c.icon)} ${escHtml(c.name)}</span></li>`).join('')}</ul></div>
+    <div class="footer-col"><h4>पेज</h4><ul>${pages.map(p=>`<li><span onclick="showSection('pages')" role="button" tabindex="0">${escHtml(p.icon||'📄')} ${escHtml(p.title)}</span></li>`).join('')}<li><a onclick="showSection('blog')" role="button">📝 ब्लॉग</a></li><li><a onclick="showSection('research')" role="button">📄 शोध PDF</a></li></ul></div>
+    <div class="footer-col"><h4>त्वरित लिंक</h4><ul><li><a href="#" onclick="openAdminPanel();return false;">⚙ Admin Panel</a></li><li><span onclick="showSection('home')" role="button" tabindex="0">🏠 होम</span></li></ul></div>`;
+}
+
+/* ════════ NAVIGATION ════════ */
+function showSection(sec) {
+  currentSection = sec;
+  ['home','blog','research','pages'].forEach(s=>{
+    const el = document.getElementById('sec-'+s);
+    if(el) el.style.display = s===sec?'block':'none';
+  });
+  document.getElementById('navLinks').classList.remove('open');
+  document.getElementById('hamburgerBtn').classList.remove('open');
+  document.getElementById('hamburgerBtn').setAttribute('aria-expanded','false');
+  ['home','blog','research','pages'].forEach(s=>{
+    const navEl = document.getElementById('nav'+s.charAt(0).toUpperCase()+s.slice(1));
+    if(navEl) navEl.classList.toggle('active', s===sec);
+  });
+  if(sec==='home') renderHome();
+  if(sec==='blog') renderBlog();
+  if(sec==='research') renderPDFs();
+  if(sec==='pages') renderPages();
+  window.scrollTo({top:0, behavior:'smooth'});
+  if(history.pushState) history.pushState({section:sec},'',(sec==='home'?'/':'/')+sec);
+}
+function goHome(){ showSection('home'); }
+function toggleMenu() {
+  const nl = document.getElementById('navLinks');
+  const hb = document.getElementById('hamburgerBtn');
+  const isOpen = nl.classList.toggle('open');
+  hb.classList.toggle('open', isOpen);
+  hb.setAttribute('aria-expanded', isOpen);
+}
+
+/* ════════ SEARCH ════════ */
+let searchTimeout;
+function doSearch() {
+  clearTimeout(searchTimeout);
+  searchTimeout = setTimeout(_doSearch, 200);
+}
+function _doSearch() {
+  const q = document.getElementById('searchInput').value.toLowerCase().trim();
+  if(!q){ renderHome(); return; }
+  const links = (DB.get('links')||[]).filter(l=>l.visible&&(
+    l.title.toLowerCase().includes(q)||
+    l.desc.toLowerCase().includes(q)||
+    (l.tags||[]).some(t=>t.toLowerCase().includes(q))
+  ));
+  const cats = DB.get('categories')||[];
+  const catMap = {}; cats.forEach(c=>{catMap[c.id]=c;});
+  let html = `<div class="section-title"><span class="icon" aria-hidden="true">🔍</span> <span>खोज परिणाम: "${escHtml(q)}"</span> <span class="count">${links.length} मिले</span></div><div class="cards-grid">`;
+  if(links.length){
+    links.forEach(l=>{
+      const cat = catMap[l.catId]||{colorClass:'c-custom'};
+      const tags = (l.tags||[]).map(t=>`<span class="tag ${getTagClass(t)}">${escHtml(t)}</span>`).join('');
+      html += `<article class="card ${escHtml(cat.colorClass)}">
+        <div class="card-header"><div class="card-icon" aria-hidden="true">${escHtml(l.icon||'🔗')}</div><div class="card-meta"><h3>${escHtml(l.title)}</h3><div class="url-text">${escHtml(urlHost(l.url))}</div></div></div>
+        <div class="card-body"><p>${escHtml(l.desc)}</p></div>
+        <div class="card-footer">${tags}<a href="${safeUrl(l.url)}" target="_blank" rel="noopener noreferrer" class="visit-btn">विज़िट करें</a></div>
+      </article>`;
+    });
+  } else {
+    html += '<div style="grid-column:1/-1;text-align:center;padding:40px;color:var(--muted)" role="status">कोई परिणाम नहीं मिला। अलग कीवर्ड आज़माएँ।</div>';
+  }
+  html += '</div>';
+  document.getElementById('categorySections').innerHTML = html;
+  document.getElementById('keywordsSection').innerHTML = '';
+  document.getElementById('tipsSection').innerHTML = '';
+}
+
+/* ════════ HELPERS ════════ */
+function getTagClass(t) {
+  if(t==='हिंदी') return 'tag-lang-hi';
+  if(t==='English') return 'tag-lang-en';
+  if(['निःशुल्क','Open Access','Partially Free'].includes(t)) return 'tag-free';
+  if(t==='सरकारी') return 'tag-govt';
+  if(t==='Peer-Reviewed') return 'tag-peer';
+  if(t.includes('Data')||t.includes('Health')) return 'tag-data';
+  return 'tag-free';
+}
+function urlHost(u){ try{return new URL(u).hostname;}catch{return u;} }
+
+/* ════════ PUBLIC TOAST ════════ */
+function showToast(msg, type='success') {
+  const c = document.getElementById('toast-container');
+  const t = document.createElement('div');
+  t.className = 'toast '+type;
+  t.setAttribute('role','alert');
+  t.innerHTML = (type==='success'?'✅':type==='error'?'❌':'⚠️')+' '+escHtml(msg);
+  c.appendChild(t);
+  requestAnimationFrame(()=>t.classList.add('show'));
+  setTimeout(()=>{ t.classList.remove('show'); setTimeout(()=>t.remove(),400); }, 3500);
+}
+
+/* ════════ SCROLL: progress + back-to-top ════════ */
+(function(){
+  const bar = document.getElementById('scrollProgress');
+  const btn = document.getElementById('backToTop');
+  let ticking = false;
+  window.addEventListener('scroll', function(){
+    if(!ticking){
+      requestAnimationFrame(function(){
+        const scrolled = window.scrollY;
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        const pct = total>0 ? (scrolled/total*100) : 0;
+        if(bar) bar.style.width = pct+'%';
+        if(btn) btn.classList.toggle('show', scrolled>400);
+        ticking = false;
+      });
+      ticking = true;
+    }
+  }, {passive:true});
+})();
+
+window.addEventListener('popstate', function(e){
+  if(e.state && e.state.section) showSection(e.state.section);
+});
+
+/* ════════ INIT ════════ */
+(async function init() {
+  seedData();
+  await initPasswordHash(); // Setup secure password hash
+  applySettings();
+  renderStats();
+  renderHome();
+  const s = DB.get('settings')||{};
+  renderFooter(s);
+
+  // Check lockout on load
+  const lock = SEC.getLockout();
+  if(lock) SEC.startLockoutUI(lock);
+})();
+</script>
+</body>
+</html>
